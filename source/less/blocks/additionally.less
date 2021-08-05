@@ -1,5 +1,29 @@
+.additionally {
+  @media (min-width: @tablet-width) {
+    width: 565px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .additionally__list {
   margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .additionally__item {

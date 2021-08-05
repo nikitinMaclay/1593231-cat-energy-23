@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,8 +14,8 @@
       <img class="" src="img/logos/header__logo-mobile.svg" alt="Логотип Кэт энерджи" width="33" height="38">
       <img class="" src="img/logos/header__logo-mobile-text.svg" alt="Логотип текста Кэт энерджи" width="101"
         height="18">
-      <img class="" src="img/logos/header__logo-tablet.svg" alt="Логотип Кэт энерджи" width="174" height="52">
-      <img class="" src="img/logos/header__logo-desktop.svg" alt="Логотип Кэт энерджи" width="202" height="59">
+      <img class="visually-hidden" src="img/logos/header__logo-tablet.svg" alt="Логотип Кэт энерджи" width="174" height="52">
+      <img class="visually-hidden" src="img/logos/header__logo-desktop.svg" alt="Логотип Кэт энерджи" width="202" height="59">
     </a>
     <button class="main-nav__toggle" type="button"></button>
     <nav class="main-nav">
@@ -65,7 +66,7 @@
             <a class="button button-order" href="#">Заказать</a>
           </li>
           <li class="goods__item">
-            <a href="#" class="goods__link">
+            <a href="#" class="goods__link goods__link--big">
               <img src="img/content-images/chicken-feeding.jpg" alt="фото корма с курицей 1000 гр" width="84"
                 height="101">
             </a>
@@ -112,7 +113,7 @@
             <a class="button button-order" href="#">Заказать</a>
           </li>
           <li class="goods__item">
-            <a href="#" class="goods__link">
+            <a href="#" class="goods__link goods__link--big">
               <img src="img/content-images/fish-feeding.jpg" alt="фото корма с рыбой 1000 гр" width="84" height="101">
             </a>
             <div class="definite-good">
@@ -159,7 +160,7 @@
             <a class="button button-order" href="#">Заказать</a>
           </li>
           <li class="goods__item">
-            <a href="#" class="goods__link">
+            <a href="#" class="goods__link goods__link--big">
               <img src="img/content-images/buckwheat-feeding.jpg" alt="фото корма с гречкой 1000 гр" width="84"
                 height="100">
             </a>
@@ -217,8 +218,8 @@
       </div>
     </section>
     <section class="extra-goods">
+      <h3 class="extra-goods__title no-indents">Дополнительные товары</h3>
       <div class="extra-goods__wrapper">
-        <h3 class="extra-goods__title no-indents">Дополнительные товары</h3>
         <ul class="extra-goods__list no-indents">
           <li class="extra-goods__item">
             <p class="extra-goods__slogan no-indents">cахарозаменитель</p>
@@ -228,7 +229,7 @@
                 <dd class="extra-goods__description">200 Р.</dd>
               </div>
             </dl>
-            <a class="button button-order" href="#">Заказать</a>
+            <a class="button button-order extra-button" href="#">Заказать</a>
           </li>
           <li class="extra-goods__item">
             <p class="extra-goods__slogan no-indents">питьевая вода</p>
@@ -238,7 +239,7 @@
                 <dd class="extra-goods__description">50 Р.</dd>
               </div>
             </dl>
-            <a class="button button-order" href="#">Заказать</a>
+            <a class="button button-order extra-button" href="#">Заказать</a>
           </li>
           <li class="extra-goods__item">
             <p class="extra-goods__slogan no-indents">молоко</p>
@@ -248,7 +249,7 @@
                 <dd class="extra-goods__description">100 Р.</dd>
               </div>
             </dl>
-            <a class="button button-order" href="#">Заказать</a>
+            <a class="button button-order extra-button" href="#">Заказать</a>
           </li>
           <li class="extra-goods__item">
             <p class="extra-goods__slogan no-indents">витамины</p>
@@ -258,23 +259,25 @@
                 <dd class="extra-goods__description">300 Р.</dd>
               </div>
             </dl>
-            <a class="button button-order" href="#">Заказать</a>
-          </li>
-          <li class="extra-goods__item extra-goods__item-all">
-            <p class="extra-goods__slogan extra-goods__slogan-all no-indents">Закажите все и получите чехол для кота в
-              подарок!</p>
+            <a class="button button-order extra-button" href="#">Заказать</a>
           </li>
         </ul>
+        <div class="extra-goods__item extra-goods-all">
+          <p class="extra-goods__slogan extra-goods__slogan-all no-indents">Закажите все и получите чехол для кота в
+            подарок!</p>
+        </div>
       </div>
     </section>
-    <section class="cooperation catalog-cooperation desktop-cooperation">
+    <section class="cooperation catalog-cooperation">
       <h2 class="visually-hidden">Сотрудничество с дилерами</h2>
       <div class="cooperation__wrapper">
         <div class="cooperation-text-info catalog-text-info">
           <p class="cooperation__description no-indents">приглашаем к сотрудничеству дилеров!</p>
           <p class="cooperation__address-text no-indents">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img src="img/content-images/location.svg" alt="адрес на карте" width="320" height="362">
+        <a class="cooperation__link-img" href="">
+          <img src="img/content-images/location.svg" alt="адрес на карте" width="320" height="362">
+        </a>
       </div>
     </section>
   </main>

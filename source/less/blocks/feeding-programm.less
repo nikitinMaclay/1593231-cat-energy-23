@@ -1,20 +1,34 @@
 .feeding-programm__wrapper {
   margin-bottom: 22px;
-  width: 370px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 920px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 82px;
+  }
 }
 
 .feeding-programm__header {
   background: url("../img/background-imgs/cat.jpg") no-repeat;
   background-size: cover;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .feeding-programm__title {
   color: @white;
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 36px;
   font-weight: normal;
   padding: 27px 36px 25px 35px;
+  text-align: center;
 }
 
 .feeding-programm__slogan {
@@ -28,8 +42,24 @@
 }
 
 .feeding-programm__button {
-  display: flex;
-  margin-top: 3px;
+  display: block;
   width: 280px;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin: 3px auto 0 auto;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+  }
 }
 
+.feeding-programm__link-img {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+}

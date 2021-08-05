@@ -1,9 +1,25 @@
+.cat-features {
+  @media (min-width: @tablet-width) {
+    width: 680px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 569px;
+    margin: 0;
+  }
+}
+
 .cat-features__list {
   margin-bottom: 46px;
 }
 
 .cat-features__item {
   margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .cat-features__item:last-child {
@@ -31,6 +47,14 @@
   padding-bottom: 15px;
   padding-left: 15px;
   margin-left: 13px;
+
+  @media (min-width: @tablet-width) {
+    width: 552px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 491px;
+  }
 }
 
 .features__input-weight {
@@ -39,6 +63,14 @@
   padding-bottom: 14px;
   padding-left: 15px;
   margin-left: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 517px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 455px;
+  }
 }
 
 .features__input-age {
@@ -47,4 +79,12 @@
   padding-bottom: 14px;
   padding-left: 15px;
   margin-left: 12px;
+
+  @media (min-width: @tablet-width) {
+    width: 497px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 436px;
+  }
 }

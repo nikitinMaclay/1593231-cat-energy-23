@@ -1,8 +1,35 @@
-.cooperation-text-info {
-  display: flex;
+.cooperation {
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
-.catalog-text-info {
+.cooperation-text-info {
+  display: flex;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 624px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 560px;
+    position: absolute;
+    background: @white;
+  }
+}
+
+.catalog-text-info,
+.form-text-info {
   background: @basic-grey;
 }
 
@@ -23,3 +50,8 @@
   padding-bottom: 26px;
 }
 
+.cooperation__link-img {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+}
