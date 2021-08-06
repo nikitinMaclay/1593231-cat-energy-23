@@ -1,3 +1,15 @@
+.comment {
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .comment__title {
   font-weight: normal;
   font-size: 24px;
@@ -15,4 +27,12 @@
   padding-top: 9px;
   padding-left: 15px;
   width: 265px;
+
+  @media (min-width: @tablet-width) {
+    width: 616px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }

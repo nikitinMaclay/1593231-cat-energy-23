@@ -1,3 +1,22 @@
+.about-owner {
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.about-owner__list {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .about-owner__item {
   margin-bottom: 13px;
 }
@@ -36,9 +55,25 @@
 .owner__input-email {
   width: 219px;
   margin-left: 11px;
+
+  @media (min-width: @tablet-width) {
+    width: 536px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 481px;
+  }
 }
 
 .owner__input-tel {
   width: 204px;
-  margin-left: 8px;
+  margin-left: 9px;
+
+  @media (min-width: @tablet-width) {
+    width: 522px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 457px;
+  }
 }
