@@ -2,87 +2,106 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="">
-      <img class="" src="img/logos/header__logo-mobile.svg" alt="Логотип Кэт энерджи" width="33" height="38">
-      <img class="" src="img/logos/header__logo-mobile-text.svg" alt="Логотип текста Кэт энерджи" width="101"
-        height="18">
-      <img class="" src="img/logos/header__logo-tablet.svg" alt="Логотип Кэт энерджи" width="174" height="52">
-      <img class="" src="img/logos/header__logo-desktop.svg" alt="Логотип Кэт энерджи" width="202" height="59">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="index.html">
+        <img class="" src="img/logos/header__logo-mobile.svg" alt="Логотип Кэт энерджи" width="33" height="38">
+        <img class="" src="img/logos/header__logo-mobile-text.svg" alt="Логотип текста Кэт энерджи" width="101"
+          height="18">
+        <img class="visually-hidden" src="img/logos/header__logo-tablet.svg" alt="Логотип Кэт энерджи" width="174"
+          height="52">
+        <img class="visually-hidden" src="img/logos/header__logo-desktop.svg" alt="Логотип Кэт энерджи" width="202"
+          height="59">
       </a>
-      <button class="main-nav__toggle" type="button"></button>
-      <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a href="#">Главная</a>
+          <ul class="main-nav__list site-list no-indents">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="#">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">каталог продукции</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">подбор программы</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
+    </div>
   </header>
   <main class="page-main">
 
     <section class="feeding-programm">
       <div class="feeding-programm__wrapper">
         <header class="feeding-programm__header">
-          <h2 class="feeding-programm__title">Функциональное питание для котов</h2>
-          <p class="feeding-programm__slogan">Занялся собой? Займись котом!</p>
+          <h2 class="feeding-programm__title no-indents">Функциональное питание для котов</h2>
+          <p class="feeding-programm__slogan no-indents">Занялся собой? Займись котом!</p>
         </header>
-        <img src="img/content-images/example-food.jpg" alt="пример питания" width="280" height="270">
+        <a class="feeding-programm__link-img" href="catalog.html">
+          <img src="img/content-images/example-food.jpg" alt="пример питания" width="280" height="270">
+        </a>
         <a class="button feeding-programm__button" href="#">подобрать программу</a>
       </div>
       <section class="possible-programms">
         <h2 class="visually-hidden">Возможные программы</h2>
         <div class="possible-programms__wrapper">
           <section class="slimming-programm">
-            <h4 class="slimming-programm__title">Похудение</h4>
-            <p class="slimming-programm__description">Ваш кот весит больше собаки и почти утратил способность лазить по
-              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a href="#">каталог slim</a>
+            <div class="slimming-programm__wrapper">
+              <h4 class="slimming-programm__title no-indents">Похудение</h4>
+              <p class="slimming-programm__description no-indents">Ваш кот весит больше собаки и почти утратил
+                способность
+                лазить по
+                деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="slimming-programm__link" href="#">каталог slim</a>
+            </div>
           </section>
           <section class="overweight-programm">
-            <h4 class="overweight-programm__title">Набор массы</h4>
-            <p class="overweight-programm__description">Заработать авторитет среди дворовых котов и даже собак? Серия
-              Cat
-              Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a href="#">каталог pro</a>
+            <div class="overweight-programm__wrapper">
+              <h4 class="overweight-programm__title no-indents">Набор массы</h4>
+              <p class="overweight-programm__description no-indents">Заработать авторитет среди дворовых котов и даже
+                собак? Серия Cat
+                Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="overweight-programm__link" href="#">каталог pro</a>
+            </div>
           </section>
         </div>
       </section>
     </section>
 
     <section class="functionality">
-      <h2 class="functionality__title">Как это работает?</h2>
       <div class="functionality__wrapper">
-        <ul class="functionality__list">
+        <h2 class="functionality__title no-indents">Как это работает?</h2>
+        <ul class="functionality__list no-indents">
           <li class="functionality__item functionality__item--1">
-            <p class="functionality__description">Функциональное питание содержит только полезные питательные вещества.
+            <p class="functionality__description no-indents">Функциональное питание содержит только полезные питательные
+              вещества.
             </p>
           </li>
           <li class="functionality__item functionality__item--2">
-            <p class="functionality__description">Выпускается в виде порошка, который нужно лишь залить кипятком и
+            <p class="functionality__description no-indents">Выпускается в виде порошка, который нужно лишь залить
+              кипятком и
               готово.
             </p>
           </li>
           <li class="functionality__item functionality__item--3">
-            <p class="functionality__description">Замените один-два приема обычной еды на наше функциональное питание.
+            <p class="functionality__description no-indents">Замените один-два приема обычной еды на наше функциональное
+              питание.
             </p>
           </li>
           <li class="functionality__item functionality__item--4">
-            <p class="functionality__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            <p class="functionality__description no-indents">Уже через месяц наслаждайтесь изменениями к лучшему вашего
+              питомца!
             </p>
           </li>
         </ul>
@@ -91,45 +110,55 @@
 
     <section class="example">
       <div class="example__wrapper">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <dl class="example__list">
-          <div class="example__item">
-            <dt class="example__name">5 кг</dt>
-            <dd class="example__description">снижение веса</dd>
-          </div>
-          <div class="example__item">
-            <dt class="example__name">60 дней</dt>
-            <dd class="example__description">затрачено времени</dd>
-          </div>
-          <div class="example__item">
-            <dt class="example__name">Затраты на питание:</dt>
-            <dd class="example__description">15000 руб</dd>
-          </div>
-        </dl>
-        <img src="./img/content-images/cat-mobile.jpg" alt="картинка кота из примера" width="311" height="232">
-        <div class="for-range__wrapper">
-          <p class="range__description">было</p>
-          <!-- для будущей полоски управления -->
-          <div class="range"></div>
-          <p class="range__description">стало</p>
+        <div class="example-info__wrapper">
+          <h2 class="example__title no-indents">Живой пример</h2>
+          <p class="example__description no-indents">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <dl class="example__list">
+              <div class="example__item example__item--1">
+                <dt class="example__name">5 кг</dt>
+                <dd class="example__value">снижение веса</dd>
+              </div>
+              <div class="example__item example__item--2">
+                <dt class="example__name">60 дней</dt>
+                <dd class="example__value">затрачено времени</dd>
+              </div>
+            <div class="example__item example__item--3">
+              <dt class="example__name">Затраты на питание:</dt>
+              <dd class="example__value">15000 руб</dd>
+            </div>
+          </dl>
         </div>
+        <div class="range__wrapper">
+          <img src="./img/content-images/cat-mobile.png" alt="картинка кота из примера" width="311" height="232">
+          <div class="for-range">
+            <div class="for-range__wrapper">
+              <p class="for-range__description no-indents">было</p>
+              <!-- для будущей полоски управления -->
+              <div class="range"></div>
+              <p class="for-range__description no-indents">стало</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cooperation">
+      <h2 class="visually-hidden">Сотрудничество с дилерами</h2>
+      <div class="cooperation__wrapper">
+        <div class="cooperation-text-info">
+          <p class="cooperation__description no-indents">приглашаем к сотрудничеству дилеров!</p>
+          <p class="cooperation__address-text no-indents">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <a class="cooperation__link-img" href="">
+          <img src="img/content-images/location.svg" alt="адрес на карте" width="320" height="362">
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <section class="cooperation desktop-cooperation">
-      <h2 class="visually-hidden">Сотрудничество с дилерами</h2>
-      <div class="cooperation__wrapper">
-        <p class="cooperation__description">приглашаем к сотрудничеству дилеров!</p>
-        <p class="cooperation__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img src="img/content-images/location.svg" alt="адрес на карте" width="320" height="362">
-      </div>
-    </section>
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
         <a class="footer-logo__link" href="#">
@@ -138,7 +167,7 @@
         </a>
       </div>
       <div class="page-footer__social">
-        <ul class="social__list">
+        <ul class="social__list no-indents">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
           </li>
@@ -151,6 +180,7 @@
         </ul>
       </div>
       <div class="page-footer__copyright">
+        <p class="copyright__description">HTML Academy</p>
         <a class="copyright__link" href="https://htmlacademy.ru/study">
           <img src="img/logos/htmlacademy.svg" alt="логотип разработчика" width="27" height="34">
         </a>

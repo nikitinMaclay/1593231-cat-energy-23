@@ -1,0 +1,126 @@
+.goods__list {
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+  }
+}
+
+.goods__item {
+  margin: 0 auto 33px auto;
+  display: flex;
+  width: 280px;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    justify-content: space-between;
+    background: @basic-grey;
+  }
+}
+
+.goods__item:last-child {
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    background: @white;
+  }
+}
+
+.goods__link {
+  display: block;
+  margin-left: 33px;
+  margin-right: 33px;
+}
+
+.goods__link--big {
+  margin-left: 23px;
+  margin-right: 24px;
+}
+
+.goods__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  margin-top: 27px;
+  margin-bottom: 49px;
+}
+
+.goods__slogan {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.goods__slogan:nth-child(even) {
+  @media (min-width: @tablet-width) {
+    margin-top: 15px;
+  }
+}
+
+.goods__slogan-more {
+  margin: 8px auto 23px auto;
+}
+
+.goods__link-more {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.goods__description-more {
+  margin: 0 auto 21px auto;
+}
+
+.goods__item-inner {
+  display: flex;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: @special-dark-grey;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.goods__item-inner:last-child {
+  margin-bottom: 22px;
+}
+
+.button-order {
+  padding: 10px 109px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 93px;
+    margin-bottom: 39px;
+  }
+}
+
+.button-all {
+  background: @basic-grey;
+  color: @special-dark-grey;
+  padding: 10px 94px;
+  margin: 0 auto;
+}

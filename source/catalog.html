@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="catalog-page__body">
@@ -12,249 +14,275 @@
       <img class="" src="img/logos/header__logo-mobile.svg" alt="Логотип Кэт энерджи" width="33" height="38">
       <img class="" src="img/logos/header__logo-mobile-text.svg" alt="Логотип текста Кэт энерджи" width="101"
         height="18">
-      <img class="" src="img/logos/header__logo-tablet.svg" alt="Логотип Кэт энерджи" width="174" height="52">
-      <img class="" src="img/logos/header__logo-desktop.svg" alt="Логотип Кэт энерджи" width="202" height="59">
-      </a>
-      <button class="main-nav__toggle" type="button"></button>
-      <nav class="main-nav">
-        <span class="visually-hidden">Открыть меню</span>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a href="#">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <img class="visually-hidden" src="img/logos/header__logo-tablet.svg" alt="Логотип Кэт энерджи" width="174" height="52">
+      <img class="visually-hidden" src="img/logos/header__logo-desktop.svg" alt="Логотип Кэт энерджи" width="202" height="59">
+    </a>
+    <button class="main-nav__toggle" type="button"></button>
+    <nav class="main-nav">
+      <span class="visually-hidden">Открыть меню</span>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list no-indents">
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main class="catalog-page-main">
     <h1 class="visually-hidden">Каталог Кэт Энерджи - товары питания для вашего питомца</h1>
     <section class="goods">
       <div class="goods__wrapper">
-        <h2 class="goods__title">Каталог продукции</h2>
-        <ul class="goods__list">
+        <h2 class="goods__title no-indents">Каталог продукции</h2>
+        <ul class="goods__list no-indents">
           <li class="goods__item">
             <a href="#" class="goods__link">
-              <img src="img/content-images/chicken-feeding.jpg" alt="фото корма с курицей 500 гр" width="68" height="86">
+              <img src="img/content-images/chicken-feeding.jpg" alt="фото корма с курицей 500 гр" width="68"
+                height="86">
             </a>
-            <p class="goods__slogan">Cat Energy pro 500 г</p>
-            <dl class="goods__list-inner">
-              <div class="goods__item-inner">
-                <dt class="goods__name">Масса</dt>
-                <dd class="goods__description">500 г</dd>
-              </div>
-              <div class="goods__item-inner">
-                <dt class="goods__name">Вкус</dt>
-                <dd class="goods__description">Курица</dd>
-              </div>
-              <div class="goods__item-inner">
-                <dt class="goods__name">Цена</dt>
-                <dd class="goods__description">700 Р.</dd>
-              </div>
-            </dl>
+            <div class="definite-good">
+              <p class="goods__slogan no-indents">Cat Energy pro 500 г</p>
+              <dl class="goods__list-inner no-indents">
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Масса</dt>
+                  <dd class="goods__description">500 г</dd>
+                </div>
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Вкус</dt>
+                  <dd class="goods__description">Курица</dd>
+                </div>
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Цена</dt>
+                  <dd class="goods__description">700 Р.</dd>
+                </div>
+              </dl>
+            </div>
             <a class="button button-order" href="#">Заказать</a>
           </li>
           <li class="goods__item">
-            <a href="#" class="goods__link">
-              <img src="img/content-images/chicken-feeding.jpg" alt="фото корма с курицей 1000 гр" width="84" height="101">
+            <a href="#" class="goods__link goods__link--big">
+              <img src="img/content-images/chicken-feeding.jpg" alt="фото корма с курицей 1000 гр" width="84"
+                height="101">
             </a>
-            <p class="goods__slogan">Cat Energy pro 1000 г</p>
-            <dl class="goods__list-inner">
-              <div class="goods__item-inner">
-                <dt class="goods__name">Масса</dt>
-                <dd class="goods__description">1000 г</dd>
-              </div>
-              <div class="goods__item-inner">
-                <dt class="goods__name">Вкус</dt>
-                <dd class="goods__description">Курица</dd>
-              </div>
-              <div class="goods__item-inner">
-                <dt class="goods__name">Цена</dt>
-                <dd class="goods__description">700 Р.</dd>
-              </div>
-            </dl>
+            <div class="definite-good">
+              <p class="goods__slogan no-indents">Cat Energy pro 1000 г</p>
+              <dl class="goods__list-inner">
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Масса</dt>
+                  <dd class="goods__description">1000 г</dd>
+                </div>
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Вкус</dt>
+                  <dd class="goods__description">Курица</dd>
+                </div>
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Цена</dt>
+                  <dd class="goods__description">700 Р.</dd>
+                </div>
+              </dl>
+            </div>
             <a class="button button-order" href="#">Заказать</a>
           </li>
           <li class="goods__item">
             <a href="#" class="goods__link">
               <img src="img/content-images/fish-feeding.jpg" alt="фото корма с рыбой 500 гр" width="68" height="78">
             </a>
-            <p class="goods__slogan">Cat Energy pro 500 г</p>
-            <dl class="goods__list-inner">
-              <div class="goods__item-inner">
-                <dt class="goods__name">Масса</dt>
-                <dd class="goods__description">500 г</dd>
-              </div>
-              <div class="goods__item-inner">
-                <dt class="goods__name">Вкус</dt>
-                <dd class="goods__description">Рыба</dd>
-              </div>
-              <div class="goods__item-inner">
-                <dt class="goods__name">Цена</dt>
-                <dd class="goods__description">700 Р.</dd>
-              </div>
-            </dl>
+            <div class="definite-good">
+              <p class="goods__slogan no-indents">Cat Energy pro 500 г</p>
+              <dl class="goods__list-inner">
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Масса</dt>
+                  <dd class="goods__description">500 г</dd>
+                </div>
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Вкус</dt>
+                  <dd class="goods__description">Рыба</dd>
+                </div>
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Цена</dt>
+                  <dd class="goods__description">700 Р.</dd>
+                </div>
+              </dl>
+            </div>
             <a class="button button-order" href="#">Заказать</a>
           </li>
           <li class="goods__item">
-            <a href="#" class="goods__link">
+            <a href="#" class="goods__link goods__link--big">
               <img src="img/content-images/fish-feeding.jpg" alt="фото корма с рыбой 1000 гр" width="84" height="101">
             </a>
-            <p class="goods__slogan">Cat Energy pro 1000 г</p>
-            <dl class="goods__list-inner">
-              <div class="goods__item-inner">
-                <dt class="goods__name">Масса</dt>
-                <dd class="goods__description">1000 г</dd>
-              </div>
-              <div class="goods__item-inner">
-                <dt class="goods__name">Вкус</dt>
-                <dd class="goods__description">Рыба</dd>
-              </div>
-              <div class="goods__item-inner">
-                <dt class="goods__name">Цена</dt>
-                <dd class="goods__description">1000 Р.</dd>
-              </div>
-            </dl>
+            <div class="definite-good">
+              <p class="goods__slogan no-indents">Cat Energy pro 1000 г</p>
+              <dl class="goods__list-inner">
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Масса</dt>
+                  <dd class="goods__description">1000 г</dd>
+                </div>
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Вкус</dt>
+                  <dd class="goods__description">Рыба</dd>
+                </div>
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Цена</dt>
+                  <dd class="goods__description">1000 Р.</dd>
+                </div>
+              </dl>
+            </div>
             <a class="button button-order" href="#">Заказать</a>
           </li>
           <li class="goods__item">
             <a href="#" class="goods__link">
-              <img src="img/content-images/buckwheat-feeding.jpg" alt="фото корма с гречкой 500 гр" width="68" height="78">
+              <img src="img/content-images/buckwheat-feeding.jpg" alt="фото корма с гречкой 500 гр" width="68"
+                height="78">
             </a>
-            <p class="goods__slogan">Cat Energy slim 500 г</p>
-            <dl class="goods__list-inner">
-              <div class="goods__item-inner">
-                <dt class="goods__name">Масса</dt>
-                <dd class="goods__description">500 г</dd>
-              </div>
-              <div class="goods__item-inner">
-                <dt class="goods__name">Вкус</dt>
-                <dd class="goods__description">Гречка</dd>
-              </div>
-              <div class="goods__item-inner">
-                <dt class="goods__name">Цена</dt>
-                <dd class="goods__description">400 Р.</dd>
-              </div>
-            </dl>
+            <div class="definite-good">
+              <p class="goods__slogan no-indents">Cat Energy slim 500 г</p>
+              <dl class="goods__list-inner">
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Масса</dt>
+                  <dd class="goods__description">500 г</dd>
+                </div>
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Вкус</dt>
+                  <dd class="goods__description">Гречка</dd>
+                </div>
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Цена</dt>
+                  <dd class="goods__description">400 Р.</dd>
+                </div>
+              </dl>
+            </div>
             <a class="button button-order" href="#">Заказать</a>
           </li>
           <li class="goods__item">
-            <a href="#" class="goods__link">
-              <img src="img/content-images/buckwheat-feeding.jpg" alt="фото корма с гречкой 1000 гр" width="84" height="100">
+            <a href="#" class="goods__link goods__link--big">
+              <img src="img/content-images/buckwheat-feeding.jpg" alt="фото корма с гречкой 1000 гр" width="84"
+                height="100">
             </a>
-            <p class="goods__slogan">Cat Energy slim 1000 г</p>
-            <dl class="goods__list-inner">
-              <div class="goods__item-inner">
-                <dt class="goods__name">Масса</dt>
-                <dd class="goods__description">1000 г</dd>
-              </div>
-              <div class="goods__item-inner">
-                <dt class="goods__name">Вкус</dt>
-                <dd class="goods__description">Гречка</dd>
-              </div>
-              <div class="goods__item-inner">
-                <dt class="goods__name">Цена</dt>
-                <dd class="goods__description">700 Р.</dd>
-              </div>
-            </dl>
+            <div class="definite-good">
+              <p class="goods__slogan no-indents">Cat Energy slim 1000 г</p>
+              <dl class="goods__list-inner">
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Масса</dt>
+                  <dd class="goods__description">1000 г</dd>
+                </div>
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Вкус</dt>
+                  <dd class="goods__description">Гречка</dd>
+                </div>
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Цена</dt>
+                  <dd class="goods__description">700 Р.</dd>
+                </div>
+              </dl>
+            </div>
             <a class="button button-order" href="#">Заказать</a>
           </li>
           <li class="goods__item">
             <a href="#" class="goods__link">
               <img src="img/content-images/rice-feeding.jpg" alt="фото корма с рисом 500 гр" width="72" height="84">
             </a>
-            <p class="goods__slogan">Cat Energy slim 500 г</p>
-            <dl class="goods__list-inner">
-              <div class="goods__item-inner">
-                <dt class="goods__name">Масса</dt>
-                <dd class="goods__description">500 г</dd>
-              </div>
-              <div class="goods__item-inner">
-                <dt class="goods__name">Вкус</dt>
-                <dd class="goods__description">Рис</dd>
-              </div>
-              <div class="goods__item-inner">
-                <dt class="goods__name">Цена</dt>
-                <dd class="goods__description">500 Р.</dd>
-              </div>
-            </dl>
+            <div class="definite-good">
+              <p class="goods__slogan no-indents">Cat Energy slim 500 г</p>
+              <dl class="goods__list-inner">
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Масса</dt>
+                  <dd class="goods__description">500 г</dd>
+                </div>
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Вкус</dt>
+                  <dd class="goods__description">Рис</dd>
+                </div>
+                <div class="goods__item-inner">
+                  <dt class="goods__name">Цена</dt>
+                  <dd class="goods__description">500 Р.</dd>
+                </div>
+              </dl>
+            </div>
             <a class="button button-order" href="#">Заказать</a>
           </li>
           <li class="goods__item">
-            <a href="#" class="goods__link">
+            <a href="#" class="goods__link goods__link-more">
               <img src="img/content-images/plus.svg" alt="показать все товары" width="30" height="30">
             </a>
-            <p class="goods__slogan">Показать еще 100500 товаров</p>
-            <p class="goods__description">На самом деле вкусов гораздо больше!</p>
+            <p class="goods__slogan goods__slogan-more no-indents">Показать еще 100500 товаров</p>
+            <p class="goods__description goods__description-more no-indents">На самом деле вкусов гораздо больше!</p>
             <a class="button button-all" href="#">Показать все</a>
           </li>
         </ul>
       </div>
     </section>
     <section class="extra-goods">
-      <h3>Дополнительные товары</h3>
-      <ul class="extra-goods__list">
-        <li class="extra-goods__item">
-          <p class="extra-goods__slogan">cахарозаменитель</p>
-          <dl class="extra-goods__list-inner">
-            <div class="extra-goods__item-inner">
-              <dt class="extra-goods__name">1 упаковка (100 г)</dt>
-              <dd class="extra-goods__description">200 Р.</dd>
-            </div>
-          </dl>
-          <a class="button button-order" href="#">Заказать</a>
-        </li>
-        <li class="extra-goods__item">
-          <p class="extra-goods__slogan">питьевая вода</p>
-          <dl class="extra-goods__list-inner">
-            <div class="extra-goods__item-inner">
-              <dt class="extra-goods__name">5 литров</dt>
-              <dd class="extra-goods__description">50 Р.</dd>
-            </div>
-          </dl>
-          <a class="button button-order" href="#">Заказать</a>
-        </li>
-        <li class="extra-goods__item">
-          <p class="extra-goods__slogan">молоко</p>
-          <dl class="extra-goods__list-inner">
-            <div class="extra-goods__item-inner">
-              <dt class="extra-goods__name">1 литр</dt>
-              <dd class="extra-goods__description">100 Р.</dd>
-            </div>
-          </dl>
-          <a class="button button-order" href="#">Заказать</a>
-        </li>
-        <li class="extra-goods__item">
-          <p class="extra-goods__slogan">витамины</p>
-          <dl class="extra-goods__list-inner">
-            <div class="extra-goods__item-inner">
-              <dt class="extra-goods__name">1 упаковка (30 г)</dt>
-              <dd class="extra-goods__description">300 Р.</dd>
-            </div>
-          </dl>
-          <a class="button button-order" href="#">Заказать</a>
-        </li>
-        <li class="extra-goods__item">
-          <p class="extra-goods__slogan">Закажите все и получите чехол для кота в подарок!</p>
-        </li>
-      </ul>
+      <h3 class="extra-goods__title no-indents">Дополнительные товары</h3>
+      <div class="extra-goods__wrapper">
+        <ul class="extra-goods__list no-indents">
+          <li class="extra-goods__item">
+            <p class="extra-goods__slogan no-indents">cахарозаменитель</p>
+            <dl class="extra-goods__list-inner">
+              <div class="extra-goods__item-inner">
+                <dt class="extra-goods__name">1 упаковка (100 г)</dt>
+                <dd class="extra-goods__description">200 Р.</dd>
+              </div>
+            </dl>
+            <a class="button button-order extra-button" href="#">Заказать</a>
+          </li>
+          <li class="extra-goods__item">
+            <p class="extra-goods__slogan no-indents">питьевая вода</p>
+            <dl class="extra-goods__list-inner">
+              <div class="extra-goods__item-inner">
+                <dt class="extra-goods__name">5 литров</dt>
+                <dd class="extra-goods__description">50 Р.</dd>
+              </div>
+            </dl>
+            <a class="button button-order extra-button" href="#">Заказать</a>
+          </li>
+          <li class="extra-goods__item">
+            <p class="extra-goods__slogan no-indents">молоко</p>
+            <dl class="extra-goods__list-inner">
+              <div class="extra-goods__item-inner">
+                <dt class="extra-goods__name">1 литр</dt>
+                <dd class="extra-goods__description">100 Р.</dd>
+              </div>
+            </dl>
+            <a class="button button-order extra-button" href="#">Заказать</a>
+          </li>
+          <li class="extra-goods__item">
+            <p class="extra-goods__slogan no-indents">витамины</p>
+            <dl class="extra-goods__list-inner">
+              <div class="extra-goods__item-inner">
+                <dt class="extra-goods__name">1 упаковка (30 г)</dt>
+                <dd class="extra-goods__description">300 Р.</dd>
+              </div>
+            </dl>
+            <a class="button button-order extra-button" href="#">Заказать</a>
+          </li>
+        </ul>
+        <div class="extra-goods__item extra-goods-all">
+          <p class="extra-goods__slogan extra-goods__slogan-all no-indents">Закажите все и получите чехол для кота в
+            подарок!</p>
+        </div>
+      </div>
+    </section>
+    <section class="cooperation catalog-cooperation">
+      <h2 class="visually-hidden">Сотрудничество с дилерами</h2>
+      <div class="cooperation__wrapper">
+        <div class="cooperation-text-info catalog-text-info">
+          <p class="cooperation__description no-indents">приглашаем к сотрудничеству дилеров!</p>
+          <p class="cooperation__address-text no-indents">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <a class="cooperation__link-img" href="">
+          <img src="img/content-images/location.svg" alt="адрес на карте" width="320" height="362">
+        </a>
+      </div>
     </section>
   </main>
+
   <footer class="page-footer">
-    <section class="cooperation">
-    <h2 class="visually-hidden">Сотрудничество с дилерами</h2>
-    <div class="cooperation__wrapper">
-      <p class="cooperation__description">приглашаем к сотрудничеству дилеров!</p>
-      <p class="cooperation__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img src="img/content-images/location.svg" alt="адрес на карте" width="320" height="362">
-    </div>
-  </section>
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
         <a class="footer-logo__link" href="#">
@@ -263,7 +291,7 @@
         </a>
       </div>
       <div class="page-footer__social">
-        <ul class="social__list">
+        <ul class="social__list no-indents">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
           </li>
@@ -276,6 +304,7 @@
         </ul>
       </div>
       <div class="page-footer__copyright">
+        <p class="copyright__description">HTML Academy</p>
         <a class="copyright__link" href="https://htmlacademy.ru/study">
           <img src="img/logos/htmlacademy.svg" alt="логотип разработчика" width="27" height="34">
         </a>
@@ -286,4 +315,3 @@
 </body>
 
 </html>
-

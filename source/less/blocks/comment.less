@@ -1,0 +1,38 @@
+.comment {
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.comment__title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  margin-top: 24px;
+  margin-bottom: 38px;
+}
+
+.comment__textarea {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @special-dark-grey;
+  padding-top: 9px;
+  padding-left: 15px;
+  width: 265px;
+
+  @media (min-width: @tablet-width) {
+    width: 616px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
