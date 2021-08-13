@@ -3,10 +3,12 @@
 
   @media (min-width: @tablet-width) {
     width: 708px;
+    background: @basic-grey;
   }
 
   @media (min-width: @desktop-width) {
     width: 570px;
+    background: @basic-grey;
   }
 }
 
@@ -14,7 +16,7 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    width: 340px;
+    width: 708px;
   }
 
   @media (min-width: @desktop-width) {
@@ -23,12 +25,47 @@
 }
 
 .slimming-programm__title {
+  position: relative;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-top: 22px;
   margin-bottom: 29px;
   font-weight: normal;
+  padding-top: 32px;
+  padding-left: 91px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: -38px;
+    padding-top: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 55px;
+    margin-left: 122px;
+  }
+}
+
+.slimming-programm__title::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 53px;
+  top: 22px;
+  left: 22px;
+  background: url("/source/img/pseudo-img/cat_back.png");
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 106px;
+    top: 19px;
+    left: -69px;
+    background: url("/source/img/pseudo-img/cat_back-desktop.png");
+  }
 }
 
 .slimming-programm__description {
@@ -36,13 +73,66 @@
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 38px;
+  width: 227px;
+  margin-left: 19px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+    margin-left: 52px;
+    margin-top: -4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 467px;
+    margin-top: 74px;
+    margin-left: 52px;
+  }
 }
 
 .slimming-programm__link {
-  display: flex;
+  position: relative;
+  display: block;
   text-decoration: none;
   font-size: 16px;
   line-height: 16px;
   color: @basic-black;
   padding-bottom: 22px;
+  margin-top: 43px;
+  margin-left: 19px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 52px;
+    margin-left: 52px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -12px;
+    margin-left: 52px;
+    padding-bottom: 39px;
+  }
+}
+
+.slimming-programm__link::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 10px;
+  top: 2.5px;
+  left: 102px;
+  background: url("/source/img/pseudo-img/icon_arrow.svg");
+
+  @media (min-width: @tablet-width) {
+    top: 10px;
+    left: 133px;
+  }
+
+  @media (min-width: @tablet-width) {
+    left: 136px;
+  }
 }

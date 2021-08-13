@@ -1,33 +1,40 @@
 .additionally {
   @media (min-width: @tablet-width) {
-    width: 565px;
+    width: 100%;
     margin: 0 auto;
   }
 
-  @media (min-width: @tablet-width) {
-    width: 1220px;
+  @media (min-width: @desktop-width) {
+    width: 100%;
     margin: 0 auto;
   }
 }
 
 .additionally__list {
-  margin-bottom: 34px;
+  width: 280px;
+  margin: 0 auto 34px auto;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    margin-left: 13px;
+    width: 690px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: 1300px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 41px;
   }
 }
 
 .additionally__item {
-  margin-bottom: 12px;
+  margin-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 42px;
+  }
 }
 
 .additionally__item:last-child {
@@ -38,8 +45,17 @@
   font-size: 24px;
   line-height: 26px;
   font-weight: normal;
-  margin-top: 23px;
-  margin-bottom: 34px;
+  margin-bottom: 36px;
+  margin-left: 20px;
+  margin-top: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 60px;
+    margin-left: 0;
+    margin-bottom: 63px;
+  }
 }
 
 .additionally__input {
@@ -50,5 +66,10 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-left: 16px;
+  margin-left: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -1,6 +1,6 @@
 .cat-features {
   @media (min-width: @tablet-width) {
-    width: 680px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -11,14 +11,19 @@
 }
 
 .cat-features__list {
-  margin-bottom: 46px;
+  width: 300px;
+  margin: 0 auto 46px auto;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
 }
 
 .cat-features__item {
   margin-bottom: 13px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 }
 
@@ -31,6 +36,13 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @special-dark-grey;
+  margin-left: 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 2px;
+  }
 }
 
 .features__input {
@@ -39,52 +51,68 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @special-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .features__input-name {
-  width: 213px;
-  padding-top: 13px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  margin-left: 13px;
+  width: 211px;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  padding-left: 12px;
+  margin-left: 11px;
 
   @media (min-width: @tablet-width) {
-    width: 552px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 18px;
+    width: 545px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 491px;
+    width: 483px;
   }
 }
 
 .features__input-weight {
-  width: 176px;
+  width: 184px;
   padding-top: 13px;
-  padding-bottom: 14px;
-  padding-left: 15px;
-  margin-left: 30px;
+  padding-bottom: 11px;
+  padding-left: 14px;
+  margin-left: 13px;
 
   @media (min-width: @tablet-width) {
-    width: 517px;
+    padding-bottom: 10px;
+    padding-left: 19px;
+    padding-top: 9px;
+    width: 513px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 455px;
+    width: 451px;
   }
 }
 
 .features__input-age {
-  width: 157px;
+  width: 151px;
   padding-top: 13px;
-  padding-bottom: 14px;
-  padding-left: 15px;
+  padding-bottom: 13px;
+  padding-left: 14px;
   margin-left: 12px;
 
   @media (min-width: @tablet-width) {
-    width: 497px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    width: 474px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 436px;
+    padding-left: 15px;
+    width: 414px;
   }
 }

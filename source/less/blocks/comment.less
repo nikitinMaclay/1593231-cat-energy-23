@@ -1,12 +1,25 @@
 .comment {
   @media (min-width: @tablet-width) {
-    width: 768px;
+    width: 100%;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: 100%;
     margin: 0 auto;
+  }
+}
+
+.comment__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
   }
 }
 
@@ -15,7 +28,20 @@
   font-size: 24px;
   line-height: 26px;
   margin-top: 24px;
-  margin-bottom: 38px;
+  margin-left: 20px;
+  margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 64px;
+    margin-left: 0;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 47px;
+  }
 }
 
 .comment__textarea {
@@ -24,15 +50,22 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @special-dark-grey;
-  padding-top: 9px;
+  padding-top: 7px;
   padding-left: 15px;
-  width: 265px;
+  width: 262px;
+  padding-bottom: 53px;
+  resize: none;
 
   @media (min-width: @tablet-width) {
-    width: 616px;
+    width: 609px;
+    padding-top: 10px;
+    font-size: 20px;
+    padding-left: 19px;
+    line-height: 30px;
+    padding-bottom: 15px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: 1197px;
   }
 }
