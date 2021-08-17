@@ -36,8 +36,8 @@
   margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 30px;
-    margin-left: -49px;
+    margin-top: 25px;
+    margin-left: -30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -49,41 +49,46 @@
 .header__logo-mobile {
   width: 33px;
   height: 38px;
+  display: none;
+
+  @media (max-width: @mobile-width-only) {
+    display: block;
+  }
 }
 
 .header__logo-mobile-text {
-  display: block;
+  display: none;
   width: 101px;
   height: 18px;
   margin-left: 90px;
   margin-top: -30px;
+
+  @media (max-width: @mobile-width-only) {
+    display: block;
+    margin-top: -26px;
+  }
 }
 
 .header__logo-tablet {
   width: 174px;
   height: 52px;
+  display: none;
+
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    display: block;
+  }
 }
 
 .header__logo-desktop {
   width: 202px;
   height: 59px;
-}
+  display: none;
+  margin-top: -10px;
+  margin-left: 9px;
 
-.catalog-page-header__logo {
-  position: relative;
-}
-
-.catalog-page-header__logo::before {
-  content: "";
-  position: absolute;
-  width: 320px;
-  height: 1px;
-  background: @grey;
-  top: 54px;
-  left: -20px;
-
-  @media (min-width: @tablet-width) {
-    display: none;
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-left: -50px;
   }
 }
 

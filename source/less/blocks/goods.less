@@ -59,15 +59,16 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 20px;
+    padding-top: 33px;
   }
 }
 
 .goods__item:nth-child(8) .goods__slogan {
   @media (min-width: @tablet-width) {
     width: 143px;
-    padding-left: 0;
-    margin-top: -1px;
+    margin-top: 4px;
+    margin-left: 90px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -108,20 +109,6 @@
   left: -20px;
 }
 
-.goods__item:last-child::after {
-  content: "";
-  position: absolute;
-  width: 320px;
-  height: 1px;
-  background: @grey;
-  bottom: -25px;
-  left: -20px;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
 .goods__item:nth-child(3) .goods__link {
   margin-top: 38px;
 }
@@ -146,6 +133,7 @@
     margin-bottom: 0;
     border: 2px solid @basic-grey;
     box-sizing: border-box;
+    justify-content: flex-start;
   }
 
   @media (min-width: @desktop-width) {
@@ -158,6 +146,136 @@
   margin-left: 36px;
   margin-right: 33px;
   margin-top: 25px;
+}
+
+.goods__img-chicken {
+  width: 68px;
+  height: 86px;
+
+  @media (min-width: @tablet-width) {
+    width: 161px;
+    height: 172px;
+    margin-top: -71px;
+    margin-left: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -78px;
+    margin-left: 8px;
+  }
+}
+
+.goods__img-chicken-big {
+  width: 84px;
+  height: 101px;
+
+  @media (min-width: @tablet-width) {
+    width: 168px;
+    height: 206px;
+    margin-left: 49px;
+    margin-top: -95px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 12px;
+    margin-top: -107px;
+  }
+}
+
+.goods__img-fish {
+  width: 68px;
+  height: 78px;
+
+  @media (min-width: @tablet-width) {
+    width: 163px;
+    height: 174px;
+    margin-left: 45px;
+    margin-top: -85px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 8px;
+    margin-top: -93px;
+  }
+}
+
+.goods__img-fish-big {
+  width: 84px;
+  height: 101px;
+
+  @media (min-width: @tablet-width) {
+    width: 168px;
+    height: 200px;
+    margin-left: 47px;
+    margin-top: -96px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 12px;
+    margin-top: -108px;
+  }
+}
+
+.goods__img-buckwheat {
+  width: 68px;
+  height: 78px;
+
+  @media (min-width: @tablet-width) {
+    width: 161px;
+    height: 171px;
+    margin-left: 47px;
+    margin-top: -82px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 8px;
+    margin-top: -89px;
+  }
+}
+
+.goods__img-buckwheat-big {
+  width: 84px;
+  height: 101px;
+
+  @media (min-width: @tablet-width) {
+    width: 168px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: -94px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 13px;
+    margin-top: -103px;
+  }
+}
+
+.goods__img-rice {
+  width: 72px;
+  height: 84px;
+
+  @media (min-width: @tablet-width) {
+    width: 163px;
+    height: 174px;
+    margin-left: 48px;
+    margin-top: -79px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 11px;
+    margin-top: -86px;
+  }
+}
+
+.goods__img-more {
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin-top: 53px;
+  }
 }
 
 .goods__link--big {
@@ -174,19 +292,34 @@
   margin-top: 27px;
   margin-bottom: 49px;
   margin-left: 20px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     width: 708px;
     margin: 0 auto;
-    margin-top: 64px;
+    margin-top: 52px;
     margin-bottom: 175px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1300px;
-    margin-top: 77px;
+    margin-top: 61px;
     margin-bottom: 179px;
+  }
+}
+
+.goods__title::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background: @grey;
+  top: -28px;
+  left: -20px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -207,11 +340,12 @@
     text-align: center;
     padding-left: 80px;
     padding-top: 26px;
+    margin-top: 2px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 45px;
-    padding-top: 28px;
+    padding-top: 35px;
   }
 }
 
@@ -244,7 +378,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 125px;
+    margin-bottom: 45px;
   }
 }
 
@@ -260,8 +394,8 @@
     width: 167px;
     text-align: center;
     margin: 0;
-    margin-left: 79px;
-    margin-top: -105px;
+    margin-top: 22px;
+    margin-left: 77px;
   }
 
   @media (min-width: @desktop-width) {
@@ -334,13 +468,15 @@
 .button-all {
   background: @basic-grey;
   color: @special-dark-grey;
-  padding: 10px 80px;
+  padding: 10px 94px;
   margin: 0 auto;
   font-size: 16px;
   line-height: 20px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 38px;
+    margin-bottom: 36px;
+    padding: 10px 80px;
+    margin-top: 87px;
   }
 
   @media (min-width: @desktop-width) {
