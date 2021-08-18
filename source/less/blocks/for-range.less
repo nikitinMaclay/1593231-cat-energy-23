@@ -1,9 +1,28 @@
 .for-range__wrapper {
-  margin-top: 27px;
+  display: flex;
+  width: 197px;
+  justify-content: space-between;
+  margin: 29px auto 0 auto;
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 569px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 7px;
+  }
 }
 
 .for-range__description {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 50px;
+  }
 }

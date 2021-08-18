@@ -10,8 +10,28 @@
   }
 }
 
+.need-programm__list {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+    margin-top: 102px;
+    margin-left: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 32px;
+    margin-left: 42px;
+  }
+}
+
 .need-programm__item {
-  margin-bottom: 13px;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .need-programm__item:last-child {
@@ -28,5 +48,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @special-dark-grey;
-  margin-left: 15px;
+  margin-left: 28px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

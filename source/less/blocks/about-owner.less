@@ -1,36 +1,68 @@
 .about-owner {
   @media (min-width: @tablet-width) {
-    width: 768px;
+    width: 100%;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: 100%;
     margin: 0 auto;
   }
 }
 
 .about-owner__list {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
 }
 
 .about-owner__item {
   margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .about-owner__item:last-child {
   margin-bottom: 0;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 79px;
+  }
 }
 
 .about-owner__title {
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
-  margin-top: 45px;
+  margin-top: 49px;
   margin-bottom: 35px;
+  width: 187px;
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    width: 512px;
+    margin-top: 106px;
+    margin-left: 0;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 22px;
+    margin-bottom: 77px;
+  }
 }
 
 .owner__label {
@@ -38,6 +70,13 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @special-dark-grey;
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 1px;
+  }
 }
 
 .owner__input {
@@ -53,27 +92,55 @@
 }
 
 .owner__input-email {
-  width: 219px;
-  margin-left: 11px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @special-dark-grey;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  width: 201px;
+  margin-left: 8px;
 
   @media (min-width: @tablet-width) {
-    width: 536px;
+    width: 526px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 18px;
+    margin-left: 16px;
+    padding-top: 9px;
+    padding-bottom: 9px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 481px;
+    width: 462px;
+    padding-top: 8px;
   }
 }
 
 .owner__input-tel {
-  width: 204px;
-  margin-left: 9px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @special-dark-grey;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  padding-left: 14px;
+  width: 184px;
+  margin-left: 6px;
 
   @media (min-width: @tablet-width) {
-    width: 522px;
+    padding-left: 19px;
+    width: 511px;
+    margin-left: 9px;
+    padding-top: 7px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 457px;
+    width: 450px;
   }
 }
