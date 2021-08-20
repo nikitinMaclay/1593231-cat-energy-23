@@ -1,3 +1,10 @@
+.goods {
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
 .goods__list {
   @media (min-width: @tablet-width) {
     width: 708px;
@@ -8,10 +15,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1300px;
+    width: 1220px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 245px 245px 245px 245px;
     margin: 0 auto;
+    grid-column-gap: 80px;
   }
 }
 
@@ -303,9 +311,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1300px;
     margin-top: 61px;
     margin-bottom: 179px;
+    margin-left: 110px;
   }
 }
 
@@ -340,7 +348,7 @@
     text-align: center;
     padding-left: 80px;
     padding-top: 26px;
-    margin-top: 2px;
+    margin-top: 3px;
   }
 
   @media (min-width: @desktop-width) {
@@ -374,11 +382,11 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 17px;
+    margin-bottom: 14px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 45px;
+    margin-bottom: 41px;
   }
 }
 
@@ -461,7 +469,7 @@
 
 .goods__item:nth-child(7) .button-order {
   @media (min-width: @tablet-width) {
-    margin-top: 20px;
+    margin-top: 17px;
   }
 }
 
