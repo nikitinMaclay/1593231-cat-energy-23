@@ -16,10 +16,10 @@
           height="38">
         <img class="header__logo-mobile-text" src="img/logos/header__logo-mobile-text.svg"
           alt="Логотип текста Кэт энерджи" width="101" height="18">
-        <img class="header__logo-tablet visually-hidden" src="img/logos/header__logo-tablet.svg"
-          alt="Логотип Кэт энерджи" width="174" height="52">
-        <img class="header__logo-desktop visually-hidden" src="img/logos/header__logo-desktop.svg"
-          alt="Логотип Кэт энерджи" width="202" height="59">
+        <img class="header__logo-tablet" src="img/logos/header__logo-tablet.svg" alt="Логотип Кэт энерджи" width="174"
+          height="52">
+        <img class="header__logo-desktop" src="img/logos/header__logo-desktop.svg" alt="Логотип Кэт энерджи" width="202"
+          height="59">
       </a>
       <nav class="main-nav main-nav--nojs main-nav--closed">
         <button class="main-nav__toggle" type="button">
@@ -28,13 +28,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list no-indents">
             <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link" href="#">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">каталог продукции</a>
+              <a class="main-nav__link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">подбор программы</a>
+              <a class="main-nav__link" href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -46,13 +46,20 @@
     <section class="feeding-programm">
       <div class="feeding-programm__wrapper">
         <header class="feeding-programm__header">
-          <div class="feading-header-background">
+          <div class="feeding-header-background">
             <h2 class="feeding-programm__title no-indents">Функциональное питание для котов</h2>
             <p class="feeding-programm__slogan no-indents">Занялся собой? Займись котом!</p>
           </div>
         </header>
         <a class="feeding-programm__link-img" href="catalog.html">
-          <img src="img/content-images/example-food.png" alt="пример питания" width="280" height="270">
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="img/content-images/example-food-desktop.png, img/content-images/example-food-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/content-images/example-food-tablet.png, img/content-images/example-food-tablet@2x.png 2x">
+            <img class="feeding__programm-img" src="img/content-images/example-food.png"
+              srcset="img/content-images/example-food@2x.png 2x" alt="пример питания" width="280" height="270">
+          </picture>
         </a>
         <a class="button feeding-programm__button" href="#">подобрать программу</a>
       </div>
@@ -135,7 +142,19 @@
           </dl>
         </div>
         <div class="range__wrapper">
-          <img src="./img/content-images/cat-mobile.png" alt="картинка кота из примера" width="311" height="232">
+          <img class="cat-img-mobile" src="img/content-images/cat-mobile.png 1x" srcset="img/content-images/cat-mobile@2x.png 2x" alt="картинка кота из примера" width="311" height="232">
+          <div class="different-cat">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/content-images/cat-fat-desktop.png 1x, img/content-images/cat-fat-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/content-images/cat-fat.png 1x, img/content-images/cat-fat@2x.png 2x">
+            <img class="fat-cat-img" src="img/content-images/cat-mobile.png" alt="картинка кота из примера" width="311" height="232">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/content-images/cat-slim-desktop.png, img/content-images/cat-slim-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/content-images/cat-slim-mobile.png, img/content-images/cat-slim-mobile@2x.png 2x">
+            <img class="slim-cat-img" src="img/content-images/cat-slim-mobile.png" alt="картинка кота из примера" width="311" height="232">
+          </picture>
+          </div>
           <div class="for-range">
             <div class="for-range__wrapper">
               <p class="for-range__description no-indents">было</p>
@@ -207,7 +226,8 @@
       <div class="page-footer__copyright">
         <p class="copyright__description">HTML Academy</p>
         <a class="copyright__link" href="https://htmlacademy.ru/study">
-          <img src="img/logos/htmlacademy.svg" alt="логотип разработчика" width="27" height="34">
+          <img class="copyright__link-img" src="img/logos/htmlacademy.svg" alt="логотип разработчика" width="27"
+            height="34">
         </a>
       </div>
     </div>

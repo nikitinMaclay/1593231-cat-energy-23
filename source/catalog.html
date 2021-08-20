@@ -16,10 +16,10 @@
           height="38">
         <img class="header__logo-mobile-text" src="img/logos/header__logo-mobile-text.svg"
           alt="Логотип текста Кэт энерджи" width="101" height="18">
-        <img class="header__logo-tablet visually-hidden" src="img/logos/header__logo-tablet.svg"
-          alt="Логотип Кэт энерджи" width="174" height="52">
-        <img class="header__logo-desktop visually-hidden" src="img/logos/header__logo-desktop.svg"
-          alt="Логотип Кэт энерджи" width="202" height="59">
+        <img class="header__logo-tablet" src="img/logos/header__logo-tablet.svg" alt="Логотип Кэт энерджи" width="174"
+          height="52">
+        <img class="header__logo-desktop" src="img/logos/header__logo-desktop.svg" alt="Логотип Кэт энерджи" width="202"
+          height="59">
       </a>
       <nav class="catalog-main-nav main-nav main-nav--nojs main-nav--closed">
         <button class="main-nav__toggle" type="button">
@@ -28,13 +28,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list no-indents">
             <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link" href="#">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">каталог продукции</a>
+              <a class="main-nav__link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">подбор программы</a>
+              <a class="main-nav__link" href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -49,8 +49,12 @@
         <ul class="goods__list no-indents">
           <li class="goods__item">
             <a href="#" class="goods__link">
-              <img src="img/content-images/chicken-feeding.jpg" alt="фото корма с курицей 500 гр" width="68"
-                height="86">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/content-images/chicken-feeding-tablet.png">
+                <img class="goods__img-chicken" src="img/content-images/chicken-feeding.png"
+                  srcset="img/content-images/chicken-feeding@2x.png" alt="фото корма с курицей 500 гр" width="68"
+                  height="86">
+              </picture>
             </a>
             <div class="definite-good">
               <p class="goods__slogan no-indents">Cat Energy pro 500 г</p>
@@ -73,8 +77,12 @@
           </li>
           <li class="goods__item">
             <a href="#" class="goods__link goods__link--big">
-              <img src="img/content-images/chicken-feeding.jpg" alt="фото корма с курицей 1000 гр" width="84"
-                height="101">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/content-images/chicken-feeding-big-tablet.png">
+                <img class="goods__img-chicken-big" src="img/content-images/chicken-feeding-big.png"
+                  srcset="img/content-images/chicken-feeding-big@2x.png" alt="фото корма с курицей 1000 гр" width="84"
+                  height="101">
+              </picture>
             </a>
             <div class="definite-good">
               <p class="goods__slogan no-indents">Cat Energy pro 1000 г</p>
@@ -97,7 +105,11 @@
           </li>
           <li class="goods__item">
             <a href="#" class="goods__link">
-              <img src="img/content-images/fish-feeding.jpg" alt="фото корма с рыбой 500 гр" width="68" height="78">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/content-images/fish-feeding-tablet.png">
+              <img class="goods__img-fish" src="img/content-images/fish-feeding.png" srcset="img/content-images/fish-feeding@2x.png"
+                alt="фото корма с рыбой 500 гр" width="68" height="78">
+              </picture>
             </a>
             <div class="definite-good">
               <p class="goods__slogan no-indents">Cat Energy pro 500 г</p>
@@ -120,7 +132,11 @@
           </li>
           <li class="goods__item">
             <a href="#" class="goods__link goods__link--big">
-              <img src="img/content-images/fish-feeding.jpg" alt="фото корма с рыбой 1000 гр" width="84" height="101">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/content-images/fish-feeding-big-tablet.png">
+              <img class="goods__img-fish-big" src="img/content-images/fish-feeding-big.png" srcset="img/content-images/fish-feeding-big@2x.png"
+                alt="фото корма с рыбой 1000 гр" width="84" height="101">
+              </picture>
             </a>
             <div class="definite-good">
               <p class="goods__slogan no-indents">Cat Energy pro 1000 г</p>
@@ -143,8 +159,11 @@
           </li>
           <li class="goods__item">
             <a href="#" class="goods__link">
-              <img src="img/content-images/buckwheat-feeding.jpg" alt="фото корма с гречкой 500 гр" width="68"
-                height="78">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/content-images/buckwheat-feeding-tablet.png">
+              <img class="goods__img-buckwheat" src="img/content-images/buckwheat-feeding.png" srcset="img/content-images/buckwheat-feeding@2x.png"
+                alt="фото корма с гречкой 500 гр" width="68" height="78">
+              </picture>
             </a>
             <div class="definite-good">
               <p class="goods__slogan no-indents">Cat Energy slim 500 г</p>
@@ -167,8 +186,12 @@
           </li>
           <li class="goods__item">
             <a href="#" class="goods__link goods__link--big">
-              <img src="img/content-images/buckwheat-feeding.jpg" alt="фото корма с гречкой 1000 гр" width="84"
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/content-images/buckwheat-feeding-big-tablet.png">
+              <img class="goods__img-buckwheat-big" src="img/content-images/buckwheat-feeding-big.png"
+                srcset="img/content-images/buckwheat-feeding@2x.png" alt="фото корма с гречкой 1000 гр" width="84"
                 height="100">
+              </picture>
             </a>
             <div class="definite-good">
               <p class="goods__slogan no-indents">Cat Energy slim 1000 г</p>
@@ -191,7 +214,11 @@
           </li>
           <li class="goods__item">
             <a href="#" class="goods__link">
-              <img src="img/content-images/rice-feeding.jpg" alt="фото корма с рисом 500 гр" width="72" height="84">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/content-images/rice-feeding-tablet.png">
+              <img class="goods__img-rice" src="img/content-images/rice-feeding.png" srcset="img/content-images/rice-feeding@2x.png"
+                alt="фото корма с рисом 500 гр" width="72" height="84">
+              </picture>
             </a>
             <div class="definite-good">
               <p class="goods__slogan no-indents">Cat Energy slim 500 г</p>
@@ -214,7 +241,10 @@
           </li>
           <li class="goods__item">
             <a href="#" class="goods__link goods__link-more">
-              <img src="img/content-images/plus.svg" alt="показать все товары" width="30" height="30">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/content-images/plus-tablet.svg">
+              <img class="goods__img-more" src="img/content-images/plus.svg" alt="показать все товары" width="30" height="30">
+            </picture>
             </a>
             <p class="goods__slogan goods__slogan-more no-indents">Показать еще 100500 товаров</p>
             <p class="goods__description goods__description-more no-indents">На самом деле вкусов гораздо больше!</p>
@@ -270,8 +300,8 @@
         </ul>
         <div class="extra-goods-all">
           <p class="extra-goods__slogan-all no-indents">Закажите все <br>
-             и получите чехол для <br>
-             кота в подарок!</p>
+            и получите чехол для <br>
+            кота в подарок!</p>
         </div>
       </div>
     </section>

@@ -53,7 +53,17 @@
   height: 50px;
   top: 23px;
   left: 13px;
-  background: url("/source/img/pseudo-img/cat_ahead.png");
+  background: url("/source/img/pseudo-img/cat_ahead.svg");
+
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    width: 268px;
+    height: 200px;
+    top: 99px;
+    left: 450px;
+    background: url("/source/img/pseudo-img/cat_ahead-tablet.svg");
+  }
 
   @media (min-width: @desktop-width) {
     content: "";
@@ -62,7 +72,7 @@
     height: 100px;
     top: 27px;
     left: -88px;
-    background: url("/source/img/pseudo-img/cat_ahead-desktop.png");
+    background: url("/source/img/pseudo-img/cat_ahead-desktop.svg");
   }
 }
 
@@ -79,7 +89,7 @@
     line-height: 24px;
     width: 340px;
     margin-left: 52px;
-    margin-top: -4px;
+    margin-top: -7px;
   }
 
   @media (min-width: @desktop-width) {
