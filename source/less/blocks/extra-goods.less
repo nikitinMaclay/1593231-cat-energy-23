@@ -8,7 +8,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
+    width: 1440px;
     margin: 0 auto;
   }
 }
@@ -28,7 +28,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: -78px;
+    margin-left: -39px;
     margin-top: 105px;
   }
 }
@@ -172,28 +172,44 @@
 }
 
 .extra-goods-all {
-  background: url("/source/img/background-imgs/catalog-cat.jpg") no-repeat;
+  background: url("../img/background-imgs/catalog-cat.jpg") no-repeat;
   color: @white;
   width: 280px;
   margin-bottom: 73px;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/background-imgs/catalog-cat@2x.jpg") no-repeat;
+    background-size: 280px auto;
+  }
 
   @media (min-width: @tablet-width) {
     width: 708px;
     margin-top: 69px;
     text-align: center;
     border: none;
-    background: url("/source/img/background-imgs/catalog-cat-tablet.jpg");
+    background: url("../img/background-imgs/catalog-cat-tablet.jpg");
     background-size: cover;
-    background-position: 0;
+    background-position: -6px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/background-imgs/catalog-cat-tablet@2x.jpg") no-repeat;
+      background-size: 707px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
     margin-top: 79px;
-    margin-right: 40px;
-    background: url("/source/img/background-imgs/catalog-cat.jpg") no-repeat;
+    margin-right: 0;
+    background: url("../img/background-imgs/catalog-cat.jpg") no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/background-imgs/catalog-cat@2x.jpg") no-repeat;
+      background-size: cover;
+      background-position: -35px;
+    }
   }
 }
 
@@ -202,7 +218,7 @@
   position: absolute;
   width: 78px;
   height: 80px;
-  background: url("/source/img/pseudo-img/icon_gift.svg");
+  background: url("../img/pseudo-img/icon_gift.svg");
   top: 59px;
   left: 103px;
 
@@ -262,8 +278,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1300px;
-    margin: 76px auto 0 auto;
+    margin-top: 76px;
+    margin-left: 109px;
+    margin-bottom: 0;
   }
 }
 
