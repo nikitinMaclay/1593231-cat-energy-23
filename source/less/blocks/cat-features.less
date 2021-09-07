@@ -20,10 +20,14 @@
 }
 
 .cat-features__item {
-  margin-bottom: 13px;
+  margin-bottom: 16px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 21px;
   }
 }
 
@@ -51,11 +55,30 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @special-dark-grey;
+  border: 1px solid @border-grey2;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+
+.features__input:hover {
+  border: 1px solid @light-grey;
+}
+
+.features__input:focus {
+  outline: 0;
+  border: 2px solid @special-dark-grey;
+}
+
+.features__input:valid {
+  border: 1px solid @border-grey2;
+}
+
+.features__input:invalid {
+  border: 1px solid @invalid-red;
 }
 
 .features__input-name {
@@ -67,13 +90,17 @@
 
   @media (min-width: @tablet-width) {
     margin-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 9px;
+    padding-top: 11px;
+    padding-bottom: 10px;
     padding-left: 18px;
     width: 545px;
   }
 
   @media (min-width: @desktop-width) {
+    margin-left: 13px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 18px;
     width: 483px;
   }
 }
@@ -93,16 +120,17 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 451px;
+    width: 454px;
   }
 }
 
 .features__input-age {
-  width: 151px;
   padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 14px;
   margin-left: 12px;
+  width: 153px;
+  margin-top: -1px;
 
   @media (min-width: @tablet-width) {
     padding-top: 9px;
@@ -113,6 +141,6 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 15px;
-    width: 414px;
+    width: 417px;
   }
 }

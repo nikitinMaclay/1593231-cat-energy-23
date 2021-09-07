@@ -3,9 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- favicons -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons//favicon-16x16.png">
+  <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body class="catalog-page__body">
@@ -14,7 +23,7 @@
       <a class="catalog-page-header__logo-link page-header__logo-link" href="index.html">
         <img class="header__logo-mobile" src="./img/logos/header__logo-mobile.svg" alt="Логотип Кэт энерджи" width="33"
           height="38">
-        <img class="header__logo-mobile-text" src="./img/logos/header__logo-mobile-text.svg"
+        <img class="header__logo-mobile-text" src="./img/icons/header__logo-mobile-text.svg"
           alt="Логотип текста Кэт энерджи" width="101" height="18">
         <img class="header__logo-tablet" src="./img/logos/header__logo-tablet.svg" alt="Логотип Кэт энерджи" width="174"
           height="52">
@@ -31,7 +40,7 @@
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">каталог продукции</a>
+              <a class="main-nav__link catalog-main-nav__link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">подбор программы</a>
@@ -47,11 +56,14 @@
       <div class="goods__wrapper">
         <h2 class="goods__title no-indents">Каталог продукции</h2>
         <ul class="goods__list no-indents">
-          <li class="goods__item">
-            <a href="#" class="goods__link">
+          <li class="goods__item"><a href="#" class="goods__link">
               <picture>
                 <source media="(min-width: 768px)"
+                  srcset="./img/content-images/chicken-feeding-tablet.webp, ./img/content-images/chicken-feeding-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)"
                   srcset="./img/content-images/chicken-feeding-tablet.png, ./img/content-images/chicken-feeding-tablet@2x.png 2x">
+                <source
+                  srcset="./img/content-images/chicken-feeding.webp, ./img/content-images/chicken-feeding@2x.webp 2x">
                 <img class="goods__img-chicken" src="./img/content-images/chicken-feeding.png"
                   srcset="./img/content-images/chicken-feeding@2x.png" alt="фото корма с курицей 500 гр" width="68"
                   height="86">
@@ -76,10 +88,14 @@
             </div>
             <a class="button button-order" href="#">Заказать</a>
           </li>
-          <li class="goods__item">
-            <a href="#" class="goods__link goods__link--big">
+          <li class="goods__item"><a href="#" class="goods__link goods__link--big">
               <picture>
-                <source media="(min-width: 768px)" srcset="./img/content-images/chicken-feeding-big-tablet.png, ./img/content-images/chicken-feeding-big-tablet@2x.png">
+                <source media="(min-width: 768px)"
+                  srcset="./img/content-images/chicken-feeding-big-tablet.webp, ./img/content-images/chicken-feeding-big-tablet@2x.webp">
+                <source media="(min-width: 768px)"
+                  srcset="./img/content-images/chicken-feeding-big-tablet.png, ./img/content-images/chicken-feeding-big-tablet@2x.png">
+                <source
+                  srcset="./img/content-images/chicken-feeding-big.webp, ./img/content-images/chicken-feeding-big@2x.webp">
                 <img class="goods__img-chicken-big" src="./img/content-images/chicken-feeding-big.png"
                   srcset="./img/content-images/chicken-feeding-big@2x.png" alt="фото корма с курицей 1000 гр" width="84"
                   height="101">
@@ -101,13 +117,16 @@
                   <dd class="goods__description">1000 Р.</dd>
                 </div>
               </dl>
-            </div>
-            <a class="button button-order" href="#">Заказать</a>
+            </div><a class="button button-order" href="#">Заказать</a>
           </li>
           <li class="goods__item">
             <a href="#" class="goods__link">
               <picture>
-                <source media="(min-width: 768px)" srcset="./img/content-images/fish-feeding-tablet.png, ./img/content-images/fish-feeding-tablet@2x.png">
+                <source media="(min-width: 768px)"
+                  srcset="./img/content-images/fish-feeding-tablet.webp, ./img/content-images/fish-feeding-tablet@2x.webp">
+                <source media="(min-width: 768px)"
+                  srcset="./img/content-images/fish-feeding-tablet.png, ./img/content-images/fish-feeding-tablet@2x.png">
+                <source srcset="./img/content-images/fish-feeding.webp, ./img/content-images/fish-feeding@2x.webp">
                 <img class="goods__img-fish" src="./img/content-images/fish-feeding.png"
                   srcset="./img/content-images/fish-feeding@2x.png" alt="фото корма с рыбой 500 гр" width="68"
                   height="78">
@@ -132,10 +151,14 @@
             </div>
             <a class="button button-order" href="#">Заказать</a>
           </li>
-          <li class="goods__item">
-            <a href="#" class="goods__link goods__link--big">
+          <li class="goods__item"><a href="#" class="goods__link goods__link--big">
               <picture>
-                <source media="(min-width: 768px)" srcset="./img/content-images/fish-feeding-big-tablet.png, ./img/content-images/fish-feeding-big-tablet@2x.png">
+                <source media="(min-width: 768px)"
+                  srcset="./img/content-images/fish-feeding-big-tablet.webp, ./img/content-images/fish-feeding-big-tablet@2x.webp">
+                <source media="(min-width: 768px)"
+                  srcset="./img/content-images/fish-feeding-big-tablet.png, ./img/content-images/fish-feeding-big-tablet@2x.png">
+                <source
+                  srcset="./img/content-images/fish-feeding-big.webp, ./img/content-images/fish-feeding-big@2x.webp">
                 <img class="goods__img-fish-big" src="./img/content-images/fish-feeding-big.png"
                   srcset="./img/content-images/fish-feeding-big@2x.png" alt="фото корма с рыбой 1000 гр" width="84"
                   height="101">
@@ -157,13 +180,16 @@
                   <dd class="goods__description">1000 Р.</dd>
                 </div>
               </dl>
-            </div>
-            <a class="button button-order" href="#">Заказать</a>
+            </div><a class="button button-order" href="#">Заказать</a>
           </li>
-          <li class="goods__item">
-            <a href="#" class="goods__link">
+          <li class="goods__item"><a href="#" class="goods__link">
               <picture>
-                <source media="(min-width: 768px)" srcset="./img/content-images/buckwheat-feeding-tablet.png, ./img/content-images/buckwheat-feeding-tablet@2x.png">
+                <source media="(min-width: 768px)"
+                  srcset="./img/content-images/buckwheat-feeding-tablet.webp, ./img/content-images/buckwheat-feeding-tablet@2x.webp">
+                <source media="(min-width: 768px)"
+                  srcset="./img/content-images/buckwheat-feeding-tablet.png, ./img/content-images/buckwheat-feeding-tablet@2x.png">
+                <source
+                  srcset="./img/content-images/buckwheat-feeding.webp, ./img/content-images/buckwheat-feeding@2x.webp">
                 <img class="goods__img-buckwheat" src="./img/content-images/buckwheat-feeding.png"
                   srcset="./img/content-images/buckwheat-feeding@2x.png" alt="фото корма с гречкой 500 гр" width="68"
                   height="78">
@@ -188,10 +214,14 @@
             </div>
             <a class="button button-order" href="#">Заказать</a>
           </li>
-          <li class="goods__item">
-            <a href="#" class="goods__link goods__link--big">
+          <li class="goods__item"><a href="#" class="goods__link goods__link--big">
               <picture>
-                <source media="(min-width: 768px)" srcset="./img/content-images/buckwheat-feeding-big-tablet.png, ./img/content-images/buckwheat-feeding-big-tablet@2x.png">
+                <source media="(min-width: 768px)"
+                  srcset="./img/content-images/buckwheat-feeding-big-tablet.webp, ./img/content-images/buckwheat-feeding-big-tablet@2x.webp">
+                <source media="(min-width: 768px)"
+                  srcset="./img/content-images/buckwheat-feeding-big-tablet.png, ./img/content-images/buckwheat-feeding-big-tablet@2x.png">
+                <source
+                  srcset="./img/content-images/buckwheat-feeding-big.webp, ./img/content-images/buckwheat-feeding-big@2x.webp">
                 <img class="goods__img-buckwheat-big" src="./img/content-images/buckwheat-feeding-big.png"
                   srcset="./img/content-images/buckwheat-feeding@2x.png" alt="фото корма с гречкой 1000 гр" width="84"
                   height="100">
@@ -216,10 +246,13 @@
             </div>
             <a class="button button-order" href="#">Заказать</a>
           </li>
-          <li class="goods__item">
-            <a href="#" class="goods__link">
+          <li class="goods__item"><a href="#" class="goods__link">
               <picture>
-                <source media="(min-width: 768px)" srcset="./img/content-images/rice-feeding-tablet.png, ./img/content-images/rice-feeding-tablet@2x.png">
+                <source media="(min-width: 768px)"
+                  srcset="./img/content-images/rice-feeding-tablet.webp, ./img/content-images/rice-feeding-tablet@2x.webp">
+                <source media="(min-width: 768px)"
+                  srcset="./img/content-images/rice-feeding-tablet.png, ./img/content-images/rice-feeding-tablet@2x.png">
+                <source srcset="./img/content-images/rice-feeding.webp, ./img/content-images/rice-feeding@2x.webp">
                 <img class="goods__img-rice" src="./img/content-images/rice-feeding.png"
                   srcset="./img/content-images/rice-feeding@2x.png" alt="фото корма с рисом 500 гр" width="72"
                   height="84">
@@ -305,9 +338,7 @@
           </li>
         </ul>
         <div class="extra-goods-all">
-          <p class="extra-goods__slogan-all no-indents">Закажите все <br>
-            и получите чехол для <br>
-            кота в подарок!</p>
+          <p class="extra-goods__slogan-all no-indents">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
         </div>
       </div>
     </section>
@@ -315,27 +346,45 @@
       <h2 class="visually-hidden">Сотрудничество с дилерами</h2>
       <div class="cooperation__wrapper">
         <div class="cooperation-text-info catalog-text-info">
-          <p class="catalog-cooperation__description cooperation__description no-indents">приглашаем <br>
-            к сотрудничеству дилеров!</p>
-          <div class="catalog-cooperation__address-text cooperation__address-text no-indents">ул. Большая <br>
-            Конюшенная, д. 19/8 <br>
+          <p class="catalog-cooperation__description cooperation__description no-indents">приглашаем<br>к сотрудничеству
+            дилеров!</p>
+          <div class="catalog-cooperation__address-text cooperation__address-text no-indents">ул. Большая<br>
+            Конюшенная, д. 19/8<br>
             <p class="cooperation__address-city">Санкт-Петербург</p>
           </div>
         </div>
-        <a class="cooperation__link-img" href="">
-          <img src="img/content-images/location.svg" alt="адрес на карте" width="320" height="362">
-        </a>
+        <figure class="catalog-cooperation__map-figure cooperation__map-figure">
+          <button type="button" class="cooperation__button-img">
+            <picture>
+              <source media="(min-width: 1440px)"
+                srcset="./img/content-images/location-desktop.webp, ./img/content-images/location-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/content-images/location-tablet.webp, ./img/content-images/location-tablet@2x.webp 2x">
+              <source media="(min-width: 1440px)"
+                srcset="./img/content-images/location-desktop.png, ./img/content-images/location-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/content-images/location-tablet.png, ./img/content-images/location-tablet@2x.png 2x">
+              <img class="cooperation__map-img" src="./img/content-images/location.png"
+                srcset="./img/content-images/location@2x.png" alt="карта с адресом Большая Конюшенная 19/8" width="320"
+                height="362">
+            </picture>
+            <iframe class="map--modal"
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A7bfef57e34af28df6e492b7e473672146de3e8789846fe8c2587a762425c5887&amp;source=constructor"
+              width="100%" height="362" frameborder="0">
+            </iframe>
+          </button>
+          <button type="button" class="map-closing-button"></button>
+        </figure>
       </div>
     </section>
   </main>
-
   <footer class="catalog-page-footer page-footer">
     <div class="catalog-page-footer__wrapper page-footer__wrapper">
       <div class="page-footer__logo">
         <a class="catalog-footer-logo__link footer-logo__link" href="#">
           <svg class="footer-logo__link-img" width="160" height="30">
-          <use xlink:href="./img/sprite.svg#icon-academy-text"></use>
-        </svg>
+            <use xlink:href="./img/sprite.svg#icon-academy-text"></use>
+          </svg>
         </a>
       </div>
       <div class="page-footer__social">
@@ -343,37 +392,38 @@
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <svg class="footer__svg-vk" width="23" height="16" viewBox="0 0 23 16" fill="none">
-                <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                <use xlink:href="./img/sprite.svg#icon_vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
               <svg class="footer__svg-inst" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <use xlink:href="./img/sprite.svg#icon-inst"></use>
+                <use xlink:href="./img/sprite.svg#icon_instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
               <svg class="footer__svg-fb" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <use xlink:href="./img/sprite.svg#icon-fb"></use>
+                <use xlink:href="./img/sprite.svg#icon_facebook"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright catalog-page-footer__copyright">
-        <p class="copyright__description">HTML Academy</p>
         <a class="copyright__link" href="https://htmlacademy.ru/study">
+          <span class="copyright__description">HTML Academy</span>
           <svg class="copyright__link-img" width="27" height="34" viewBox="0 0 27 34" fill="none">
-            <use xlink:href="./img/sprite.svg#icon-academy"></use>
+            <use xlink:href="./img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-  <script src="./js/main-nav.js"></script>
+  <script src="js/main-nav.min.js"></script>
+  <script src="js/map-popup.min.js"></script>
 </body>
 
 </html>

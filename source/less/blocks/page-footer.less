@@ -34,6 +34,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-top: -48px;
   }
 
   @media (min-width: @desktop-width) {
@@ -42,20 +43,20 @@
     margin-right: auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 33px;
+    margin-top: -18px;
   }
 }
 
 .catalog-page-footer__wrapper {
   @media (min-width: @desktop-width) {
-    margin-top: 47px;
+    margin-top: 38px;
   }
 }
 
 .footer-logo__link {
   display: block;
   text-align: center;
-  padding-top: 38px;
+  padding-top: 41px;
   margin-top: 0;
   margin-left: 33px;
 
@@ -72,6 +73,14 @@
     padding-top: 61px;
     padding-bottom: 50px;
   }
+}
+
+.footer-logo__link:hover {
+  opacity: 0.8;
+}
+
+.footer-logo__link:active {
+  opacity: 0.6;
 }
 
 .catalog-footer-logo__link {
@@ -130,7 +139,7 @@
   position: absolute;
   width: 280px;
   height: 1px;
-  top: -20px;
+  top: -21px;
   left: -75px;
   background: @grey;
 
@@ -165,7 +174,7 @@
 
 .page-footer__copyright {
   display: flex;
-  margin-top: 46px;
+  margin-top: 53px;
   justify-content: space-between;
   padding-bottom: 32px;
   margin-bottom: 0;
@@ -205,6 +214,7 @@
   font-family: "Arial", sans-serif;
   margin-left: 20px;
   margin-top: 0;
+  display: block;
 
   @media (min-width: @tablet-width) {
     margin-right: 23px;
@@ -217,14 +227,23 @@
   }
 }
 
+.copyright__description:active {
+  opacity: 0.3;
+}
+
 .copyright__link {
-  display: block;
+  display: flex;
   margin-right: 20px;
   margin-top: -7px;
+  text-decoration: none;
+  color: @special-dark-grey;
+  width: 300px;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     margin-right: 31px;
     margin-top: 2px;
+    width: 184px;
   }
 
   @media (min-width: @desktop-width) {
@@ -237,13 +256,18 @@
   width: 27px;
   height: 34px;
   fill: @icon-grey;
+  margin-top: -8px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
 }
 
-.copyright__link-img:hover {
+.copyright__description:hover + .copyright__link-img {
   fill: @button-green;
 }
 
-.copyright__link-img:active {
+.copyright__description:active + .copyright__link-img {
   fill: @button-green;
   opacity: 0.3;
 }

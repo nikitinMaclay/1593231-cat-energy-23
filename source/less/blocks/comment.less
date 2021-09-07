@@ -27,9 +27,10 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
-  margin-top: 24px;
+  margin-top: 26px;
   margin-left: 20px;
   margin-bottom: 39px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
@@ -41,6 +42,48 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 47px;
+  }
+}
+
+.comment__title::before {
+  content: "";
+  position: absolute;
+  width: 158px;
+  height: 2px;
+  top: 13px;
+  right: 0;
+  background: @button-green;
+
+  @media (min-width: @tablet-width) {
+    width: 478px;
+    top: 22px;
+    right: -68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1108px;
+    top: 22px;
+    right: -30px;
+    background: @button-green;
+  }
+}
+
+.comment__title::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    top: 22px;
+    left: -69px;
+    background: @button-green;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 70px;
+    top: 22px;
+    left: -110px;
+    background: @button-green;
   }
 }
 

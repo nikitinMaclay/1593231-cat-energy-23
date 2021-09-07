@@ -23,6 +23,7 @@
   margin-bottom: 37px;
   margin-top: 28px;
   margin-left: 20px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -35,6 +36,20 @@
     margin-top: 48px;
     width: 1300px;
     margin-bottom: 56px;
+  }
+}
+
+.form-section__title::before {
+  content: "";
+  width: 320px;
+  height: 1px;
+  background: @grey;
+  position: absolute;
+  top: -30px;
+  left: -20px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -57,7 +72,7 @@
 }
 
 .sending-application-button {
-  margin-top: 5px;
+  margin-top: 4px;
   margin-left: 20px;
   font-size: 16px;
   line-height: 20px;

@@ -47,6 +47,18 @@
   }
 }
 
+.catalog-page-header__logo-link {
+  @media (min-width: @tablet-width) {
+    margin-top: 25px;
+    margin-left: -29px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 64px;
+    margin-left: -49px;
+  }
+}
+
 .form-page-header__logo-link {
   margin-top: 12px;
 
@@ -117,6 +129,14 @@
     display: block;
     margin-left: 49px;
   }
+}
+
+.header__logo-desktop:hover {
+  opacity: 0.8;
+}
+
+.header__logo-desktop:active {
+  opacity: 0.6;
 }
 
 .catalog-page-header {

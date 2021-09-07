@@ -77,6 +77,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: @basic-black;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
@@ -88,6 +89,80 @@
     font-size: 20px;
     line-height: 30px;
     color: @white;
+  }
+}
+
+.main-nav__link:hover {
+  opacity: 0.6;
+}
+
+.main-nav__link:active {
+  opacity: 0.3;
+}
+
+.main-nav__item:last-child .form-main-nav__link::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    width: 152px;
+    height: 1.5px;
+    bottom: -6px;
+    left: 1px;
+    background: @button-green;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    width: 169px;
+    height: 1.5px;
+    bottom: -9px;
+    left: 1px;
+    background: @button-green;
+  }
+}
+
+.main-nav__item:first-child .index-main-nav__link::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 1.5px;
+    bottom: -8px;
+    left: 1px;
+    background: @button-green;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 1.5px;
+    bottom: -8px;
+    left: 0;
+    background: @white;
+  }
+}
+
+.main-nav__item:nth-child(2) .catalog-main-nav__link::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    width: 153px;
+    height: 1.5px;
+    bottom: -7px;
+    left: -1px;
+    background: @button-green;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    width: 171px;
+    height: 1.5px;
+    bottom: -8px;
+    left: 0;
+    background: @button-green;
   }
 }
 

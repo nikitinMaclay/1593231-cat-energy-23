@@ -11,6 +11,8 @@
 }
 
 .functionality__list {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -19,6 +21,22 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.functionality__list::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    bottom: -104px;
+    left: -30px;
+    width: 768px;
+    height: 1px;
+    background: #d9d9d9;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
@@ -280,6 +298,10 @@
     left: 125px;
     background: url("../img/pseudo-img/3.svg") no-repeat;
     z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -115px;
   }
 }
 

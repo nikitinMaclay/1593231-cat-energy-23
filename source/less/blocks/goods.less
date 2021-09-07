@@ -438,11 +438,34 @@
   line-height: 16px;
   color: @special-dark-grey;
   justify-content: space-between;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 16px;
     margin-bottom: 16px;
+  }
+}
+
+.goods__item-inner::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 1px;
+    bottom: -8px;
+    left: -2px;
+    background-color: @light-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    width: 169px;
+    height: 1px;
+    bottom: -8px;
+    left: 0;
+    background-color: @light-grey;
   }
 }
 
@@ -491,4 +514,13 @@
     padding: 10px 39px;
     margin-top: 85px;
   }
+}
+
+.button-all:hover {
+  background: @button-hover-grey;
+}
+
+.button-all:active {
+  color: @special-dark-grey-opacity;
+  background: @basic-grey;
 }

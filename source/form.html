@@ -3,9 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- favicons -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons//favicon-16x16.png">
+  <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body class="form-page__body">
@@ -14,10 +23,9 @@
       <a class="form-page-header__logo-link page-header__logo-link" href="index.html">
         <img class="header__logo-mobile" src="./img/logos/header__logo-mobile.svg" alt="Логотип Кэт энерджи" width="33"
           height="38">
-        <img class="header__logo-mobile-text" src="./img/logos/header__logo-mobile-text.svg"
-          alt="Логотип текста Кэт энерджи" width="101" height="18">
-        <img class="header__logo-tablet" src="./img/logos/header__logo-tablet.svg" alt="Логотип Кэт энерджи" width="174"
-          height="52">
+        <img class="header__logo-mobile-text" src="./img/icons/header__logo-mobile-text.svg"
+          alt="Логотип текста Кэт энерджи" width="101" height="18"> <img class="header__logo-tablet"
+          src="./img/logos/header__logo-tablet.svg" alt="Логотип Кэт энерджи" width="174" height="52">
         <img class="header__logo-desktop" src="./img/logos/header__logo-desktop.svg" alt="Логотип Кэт энерджи"
           width="202" height="59">
       </a>
@@ -34,7 +42,7 @@
               <a class="main-nav__link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">подбор программы</a>
+              <a class="main-nav__link form-main-nav__link" href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -53,33 +61,29 @@
               <h2 class="visually-hidden">Параметры кота</h2>
               <ul class="cat-features__list no-indents">
                 <li class="cat-features__item">
-                  <label class="features__label" for="cat-name-field">
-                    имя:*
-                  </label>
+                  <label class="features__label" for="cat-name-field">имя:*</label>
                   <input class="features__input features__input-name" type="text" name="cat-name" id="cat-name-field"
-                    placeholder="Барсик" required>
+                  placeholder="Барсик" required>
                 </li>
                 <li class="cat-features__item">
-                  <label class="features__label" for="cat-weight-field">
-                    вес (кг):*
-                  </label>
+                  <label class="features__label" for="cat-weight-field">вес (кг):*</label>
                   <input class="features__input features__input-weight" type="text" name="cat-weight"
                     id="cat-weight-field" placeholder="7" required>
                 </li>
                 <li class="cat-features__item">
-                  <label class="features__label" for="cat-age-field">
-                    Возраст (лет):
-                  </label>
+                  <label class="features__label" for="cat-age-field">Возраст (лет):</label>
                   <input class="features__input features__input-age" type="text" name="cat-age" id="cat-age-field"
-                    placeholder="7">
+                  placeholder="7">
                 </li>
               </ul>
             </section>
             <section class="need-programm">
               <h2 class="visually-hidden">Выбор программы по изменению веса</h2>
+              <div class="need-programm__wrapper">
               <ul class="need-programm__list no-indents">
                 <li class="need-programm__item">
-                  <input class="need__input" type="radio" name="weight-changing" id="slim" value="Похудение" checked>
+                  <input class="need__input" type="radio" name="weight-changing" id="slim" value="Похудение"
+                    checked="checked">
                   <label class="need__label" for="slim">Похудение</label>
                 </li>
                 <li class="need-programm__item">
@@ -91,24 +95,21 @@
                   <label class="need__label" for="no-answer">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
+            </div>
             </section>
           </div>
           <section class="about-owner">
             <h2 class="about-owner__title no-indents">Контактные данные (владельца кота)</h2>
             <ul class="about-owner__list no-indents">
               <li class="about-owner__item">
-                <label class="owner__label owner__label-email" for="email-field">
-                  e-mail:*
-                </label>
                 <input class="owner__input owner__input-email" type="email" name="email"
-                  placeholder="kuklachev@gmail.com" required id="email-field">
+                placeholder="kuklachev@gmail.com" id="email-field" required>
+                <label class="owner__label owner__label-email" for="email-field">e-mail:*</label>
               </li>
               <li class="about-owner__item">
-                <label class="owner__label owner__label-tel" for="tel-field">
-                  Телефон:*
-                </label>
                 <input class="owner__input owner__input-tel" type="tel" name="tel" id="tel-field"
-                  placeholder="8 (960) 900-60-90" required>
+                placeholder="8 (960) 900-60-90" required>
+                <label class="owner__label owner__label-tel" for="tel-field">Телефон:*</label>
               </li>
             </ul>
           </section>
@@ -122,12 +123,14 @@
             <h2 class="additionally__title no-indents">Дополнительно</h2>
             <ul class="additionally__list no-indents">
               <li class="additionally__item">
-                <input class="additionally__input" type="checkbox" name="sweetener" id="sweetener-choose" checked>
+                <input class="additionally__input" type="checkbox" name="sweetener" id="sweetener-choose"
+                  checked="checked">
                 <label class="additionally__label" for="sweetener-choose">Сахарозаменитель</label>
               </li>
               <li class="additionally__item">
                 <input class="additionally__input" type="checkbox" name="drinking water" id="drinking-water-choose">
-                <label class="additionally__label" for="drinking-water-choose">Питьевая вода</label>
+                <label class="additionally__label" for="drinking-water-choose">Питьевая
+                  вода</label>
               </li>
               <li class="additionally__item">
                 <input class="additionally__input" type="checkbox" name="milk" id="milk-choose">
@@ -139,8 +142,8 @@
               </li>
             </ul>
           </section>
-          <div class="form__necessary">
-            <button class="button sending-application-button" type="submit">Отправить заявку</button>
+          <div class="form__necessary"><button class="button sending-application-button" type="submit">Отправить
+              заявку</button>
             <p class="necessary__title">* — Обязательные поля</p>
           </div>
         </div>
@@ -150,27 +153,44 @@
       <h2 class="visually-hidden">Сотрудничество с дилерами</h2>
       <div class="cooperation__wrapper">
         <div class="cooperation-text-info form-text-info">
-          <p class="form-cooperation__description cooperation__description no-indents">приглашаем <br>
+          <p class="form-cooperation__description cooperation__description no-indents">приглашаем<br>
             к сотрудничеству дилеров!</p>
-          <div class="form-cooperation__address-text cooperation__address-text no-indents">ул. Большая <br>
-            Конюшенная, д. 19/8 <br>
+          <div class="form-cooperation__address-text cooperation__address-text no-indents">ул. Большая<br>
+            Конюшенная, д. 19/8<br>
             <p class="cooperation__address-city">Санкт-Петербург</p>
           </div>
         </div>
-        <a class="form-cooperation__link-img cooperation__link-img" href="">
-          <img src="./img/content-images/location.svg" alt="адрес на карте" width="320" height="362">
-        </a>
+        <figure class="form-cooperation__map-figure cooperation__map-figure">
+          <button type="button" class="cooperation__button-img">
+            <picture>
+              <source media="(min-width: 1440px)"
+                srcset="./img/content-images/location-desktop.webp, ./img/content-images/location-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/content-images/location-tablet.webp, ./img/content-images/location-tablet@2x.webp 2x">
+              <source media="(min-width: 1440px)"
+                srcset="./img/content-images/location-desktop.png, ./img/content-images/location-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/content-images/location-tablet.png, ./img/content-images/location-tablet@2x.png 2x">
+              <img class="cooperation__map-img" src="./img/content-images/location.png"
+                srcset="./img/content-images/location@2x.png" alt="карта с адресом Большая Конюшенная 19/8" width="320"
+                height="362">
+            </picture>
+            <iframe class="map--modal"
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A7bfef57e34af28df6e492b7e473672146de3e8789846fe8c2587a762425c5887&amp;source=constructor"
+              width="100%" height="362" frameborder="0">
+            </iframe>
+          </button>
+          <button type="button" class="map-closing-button"></button>
+        </figure>
       </div>
     </section>
   </main>
-
   <footer class="form-page-footer page-footer">
     <div class="form-page-footer__wrapper page-footer__wrapper">
-      <div class="page-footer__logo">
-        <a class="form-footer-logo__link footer-logo__link" href="#">
+      <div class="page-footer__logo"><a class="form-footer-logo__link footer-logo__link" href="#">
           <svg class="footer-logo__link-img" width="160" height="30">
-          <use xlink:href="./img/sprite.svg#icon-academy-text"></use>
-        </svg>
+            <use xlink:href="./img/sprite.svg#icon-academy-text"></use>
+          </svg>
         </a>
       </div>
       <div class="page-footer__social">
@@ -178,37 +198,38 @@
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <svg class="footer__svg-vk" width="23" height="16" viewBox="0 0 23 16" fill="none">
-                <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                <use xlink:href="./img/sprite.svg#icon_vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
               <svg class="footer__svg-inst" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <use xlink:href="./img/sprite.svg#icon-inst"></use>
+                <use xlink:href="./img/sprite.svg#icon_instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
               <svg class="footer__svg-fb" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <use xlink:href="./img/sprite.svg#icon-fb"></use>
+                <use xlink:href="./img/sprite.svg#icon_facebook"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
       <div class="form-page-footer__copyright page-footer__copyright">
-        <p class="copyright__description">HTML Academy</p>
         <a class="copyright__link" href="https://htmlacademy.ru/study">
+          <span class="copyright__description">HTML Academy</span>
           <svg class="copyright__link-img" width="27" height="34" viewBox="0 0 27 34" fill="none">
-            <use xlink:href="./img/sprite.svg#icon-academy"></use>
+            <use xlink:href="./img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-  <script src="./js/main-nav.js"></script>
+  <script src="js/main-nav.min.js"></script>
+  <script src="js/map-popup.min.js"></script>
 </body>
 
 </html>
