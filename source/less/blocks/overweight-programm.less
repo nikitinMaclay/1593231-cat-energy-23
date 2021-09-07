@@ -1,5 +1,5 @@
 .overweight-programm {
-  background: @grey;
+  background: @basic-grey;
 
   @media (min-width: @tablet-width) {
     width: 708px;
@@ -83,6 +83,7 @@
   margin-bottom: 38px;
   width: 227px;
   margin-left: 19px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -96,6 +97,20 @@
     width: 467px;
     margin-top: 74px;
     margin-left: 52px;
+  }
+}
+
+.overweight-programm__description::before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 240px;
+  height: 1px;
+  background: @grey;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -130,7 +145,7 @@
   position: absolute;
   width: 32px;
   height: 10px;
-  top: 1px;
+  top: 4px;
   left: 100px;
   background: url("../img/pseudo-img/icon_arrow.svg");
 
@@ -139,3 +154,17 @@
     left: 130px;
   }
 }
+
+.overweight-programm__link:active {
+  opacity: 0.3;
+}
+
+.overweight-programm__link:hover::before {
+  background: url("../img/pseudo-img/icon_arrow_big.svg");
+}
+
+.overweight-programm__link:active::before {
+  background: url("../img/pseudo-img/icon_arrow_big.svg");
+  opacity: 0.3;
+}
+
