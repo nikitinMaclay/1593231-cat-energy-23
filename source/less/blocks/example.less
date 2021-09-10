@@ -255,11 +255,13 @@
 
 .cat-img-mobile {
   @media (min-width: @tablet-width) {
-    display: none;
+    width: 677px;
+    height: 521px;
   }
 
   @media (min-width: @desktop-width) {
-    display: none;
+    width: 677px;
+    height: 521px;
   }
 }
 
@@ -268,31 +270,18 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    width: 354px;
-    height: 607px;
+    width: 545px;
+    height: 521px;
+    margin-left: -248px;
+    margin-top: 11px;
   }
 
   @media (min-width: @desktop-width) {
     display: block;
-    width: 325px;
-    height: 654px;
-    margin-left: -40px;
-  }
-}
-
-.fat-cat-img {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    width: 354px;
-    height: 610px;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: block;
-    width: 405px;
-    height: 536px;
+    width: 536px;
+    height: 521px;
+    margin-left: -269px;
+    margin-top: 0;
   }
 }
 
@@ -309,5 +298,28 @@
     top: -290px;
     left: -72px;
     margin-bottom: -416px;
+  }
+}
+
+.fat-cat {
+  @media (min-width: @tablet-width) {
+    width: 340px;
+    overflow: hidden;
+    margin-top: 11px;
+    margin-left: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 474px;
+    overflow: hidden;
+    margin-top: 2px;
+    margin-left: 0;
+  }
+}
+
+.slim-cat {
+  @media (min-width: @tablet-width) {
+    width: 325px;
+    overflow: hidden;
   }
 }
