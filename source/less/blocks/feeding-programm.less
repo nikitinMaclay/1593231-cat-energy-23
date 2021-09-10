@@ -16,37 +16,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: 50%;
     margin-left: 96px;
-  }
-}
-
-.feeding-programm__header::before {
-  @media (min-width: @desktop-width) {
-    content: "";
-    position: absolute;
-    width: 720px;
-    height: 694px;
-    background: url("../img/background-imgs/cat-desktop.jpg") no-repeat;
-    top: -139px;
-    right: -75px;
-  }
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/background-imgs/cat-desktop@2x.jpg");
-    background-size: 720px auto;
-  }
-}
-
-.feeding-programm__header::after {
-  @media (min-width: @desktop-width) {
-    content: "";
-    position: absolute;
-    width: 720px;
-    height: 694px;
-    background: @opacity-green;
-    top: -139px;
-    right: -75px;
   }
 }
 
@@ -61,7 +32,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1290px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 82px;
@@ -87,7 +58,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: -15px;
+    margin-left: 59px;
     margin-top: 57px;
   }
 }
@@ -110,7 +81,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: -42px;
+    margin-left: 34px;
   }
 }
 
@@ -138,7 +109,7 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     top: 318px;
-    left: 115px;
+    left: 190px;
   }
 }
 
@@ -149,6 +120,34 @@
 
   @media (min-width: @desktop-width) {
     z-index: 1;
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 694px;
+    background-image: url("../img/background-imgs/cat-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -138px;
+    right: -1px;
+    margin: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-imgs/cat-desktop@2x.jpg");
+    }
+  }
+}
+
+.feeding-programm__link-img::before {
+  @media (min-width: @desktop-width) {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 694px;
+    background-color: @opacity-green;
+    top: 0;
+    right: 0;
+    margin: 0;
   }
 }
 
@@ -174,7 +173,8 @@
     width: 552px;
     height: 499px;
     position: absolute;
-    top: 3px;
-    left: 483px;
+    top: 140px;
+    left: -163px;
+    z-index: 1;
   }
 }

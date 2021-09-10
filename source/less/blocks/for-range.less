@@ -8,10 +8,12 @@
   @media (min-width: @tablet-width) {
     width: 569px;
     padding-bottom: 70px;
+    margin-top: 102px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 8px;
+    margin-top: 156px;
   }
 }
 
@@ -24,6 +26,19 @@
     font-size: 20px;
     line-height: 30px;
     width: 50px;
+    border-bottom: 1px @light-grey dashed;
+  }
+}
+
+.for-range__description:hover {
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px @light-grey solid;
+  }
+}
+
+.for-range__description:active {
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
   }
 }
 
