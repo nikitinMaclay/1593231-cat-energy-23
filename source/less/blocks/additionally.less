@@ -48,9 +48,11 @@
   line-height: 26px;
   font-weight: normal;
   margin-bottom: 36px;
-  margin-left: 20px;
   margin-top: 18px;
   position: relative;
+  width: 279px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
@@ -58,6 +60,11 @@
     margin-top: 60px;
     margin-left: 0;
     margin-bottom: 63px;
+    width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1300px;
   }
 }
 
@@ -67,7 +74,7 @@
   width: 136px;
   height: 2px;
   top: 13px;
-  right: 0;
+  right: -20px;
   background: @button-green;
 
   @media (min-width: @tablet-width) {

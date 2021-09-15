@@ -17,17 +17,20 @@
     min-height: 197px;
     margin-top: 72px;
     margin-left: -9px;
+    height: 198px;
+    width: 630px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 1px;
     margin-left: -3px;
+    height: 100px;
   }
 }
 
 .need-programm__list {
   width: 280px;
-  margin: 0 auto;
+  margin: 49px auto;
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -82,11 +85,11 @@
   margin-bottom: 0;
 }
 
-.need__input {
+.need-programm__input {
   display: none;
 }
 
-.need__label {
+.need-programm__label {
   position: relative;
   font-size: 16px;
   line-height: 18px;
@@ -104,11 +107,11 @@
   }
 }
 
-.need__label:active {
+.need-programm__label:active {
   color: @special-dark;
 }
 
-.need__label::before {
+.need-programm__label::before {
   content: "";
   position: absolute;
   left: -46.5px;
@@ -141,15 +144,15 @@
   }
 }
 
-.need__label:hover::before {
+.need-programm__label:hover::before {
   border: 2px @radio-grey solid;
 }
 
-.need__label:active::before {
+.need-programm__label:active::before {
   opacity: 0.3;
 }
 
-.need__input:checked + .need__label::after {
+.need-programm__input:checked + .need-programm__label::after {
   content: "";
   position: absolute;
   left: -37.5px;
@@ -185,6 +188,6 @@
   }
 }
 
-.need__input:checked + .need__label:active::after {
+.need-programm__input:checked + .need-programm__label:active::after {
   opacity: 0.3;
 }

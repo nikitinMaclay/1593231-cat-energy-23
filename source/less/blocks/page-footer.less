@@ -1,29 +1,28 @@
 .page-footer {
   background: @basic-grey;
-  width: 320px;
-  margin: 0 auto;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    width: 100%;
     margin: 0 auto;
     margin-top: -11px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
   }
 }
 
 .catalog-page-footer {
   @media (min-width: @tablet-width) {
-    width: 768px;
+    width: 100%;
     margin-left: 0;
     margin-top: -42px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1440px;
+    width: 100%;
     margin-left: 0;
   }
 }
@@ -34,7 +33,8 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-top: -48px;
+    width: 768px;
+    margin: -49px auto 0 auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -53,7 +53,7 @@
   }
 }
 
-.footer-logo__link {
+.page-footer__link-logo {
   display: block;
   text-align: center;
   padding-top: 41px;
@@ -75,21 +75,21 @@
   }
 }
 
-.footer-logo__link:hover {
+.page-footer__link-logo:hover {
   opacity: 0.8;
 }
 
-.footer-logo__link:active {
+.page-footer__link-logo:active {
   opacity: 0.6;
 }
 
-.catalog-footer-logo__link {
+.catalog-page-footer__link-logo {
   @media (min-width: @desktop-width) {
     padding-top: 64px;
   }
 }
 
-.form-footer-logo__link {
+.form-page-footer__link-logo {
   @media (min-width: @tablet-width) {
     padding-top: 56px;
   }
@@ -99,7 +99,7 @@
   }
 }
 
-.social__list {
+.social-list {
   position: relative;
   display: flex;
   width: 130px;
@@ -117,14 +117,14 @@
   }
 }
 
-.catalog-social__list {
+.catalog-social-list {
   @media (min-width: @desktop-width) {
     margin-top: 62px;
     margin-left: 15px;
   }
 }
 
-.form-social__list {
+.form-social-list {
   @media (min-width: @tablet-width) {
     margin-top: 54px;
   }
@@ -134,7 +134,7 @@
   }
 }
 
-.social__list::before {
+.social-list::before {
   content: "";
   position: absolute;
   width: 280px;
@@ -148,7 +148,7 @@
   }
 }
 
-.social__list::after {
+.social-list::after {
   content: "";
   position: absolute;
   width: 280px;
@@ -162,7 +162,7 @@
   }
 }
 
-.social__item:last-child {
+.social-list__item:last-child {
   @media (min-width: @tablet-width) {
     margin-top: -6px;
   }
@@ -210,7 +210,7 @@
   }
 }
 
-.copyright__description {
+.page-footer__description-copyright {
   font-family: "Arial", sans-serif;
   margin-left: 20px;
   margin-top: 0;
@@ -231,13 +231,12 @@
   opacity: 0.3;
 }
 
-.copyright__link {
+.page-footer__link-copyright {
   display: flex;
-  margin-right: 20px;
-  margin-top: -7px;
+  margin: -7px auto 0 auto;
   text-decoration: none;
   color: @special-dark-grey;
-  width: 300px;
+  width: 320px;
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
@@ -252,27 +251,29 @@
   }
 }
 
-.copyright__link-img {
+.page-footer__link-img-copyright {
   width: 27px;
   height: 34px;
   fill: @icon-grey;
   margin-top: -8px;
+  margin-right: 20px;
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
+    margin-right: 0;
   }
 }
 
-.copyright__description:hover + .copyright__link-img {
+.copyright__description:hover + .page-footer__link-img-copyright {
   fill: @button-green;
 }
 
-.copyright__description:active + .copyright__link-img {
+.copyright__description:active + .page-footer__link-img-copyright {
   fill: @button-green;
   opacity: 0.3;
 }
 
-.footer__svg-vk {
+.social-list__svg-vk {
   fill: @icon-grey;
 
   @media (min-width: @tablet-width) {
@@ -281,16 +282,16 @@
   }
 }
 
-.footer__svg-vk:hover {
+.social-list__svg-vk:hover {
   fill: @button-green;
 }
 
-.footer__svg-vk:active {
+.social-list__svg-vk:active {
   fill: @button-green;
   opacity: 0.3;
 }
 
-.footer__svg-fb {
+.social-list__svg-fb {
   stroke: @icon-grey;
 
   @media (min-width: @tablet-width) {
@@ -299,16 +300,16 @@
   }
 }
 
-.footer__svg-fb:hover {
+.social-list__svg-fb:hover {
   stroke: @button-green;
 }
 
-.footer__svg-fb:active {
+.social-list__svg-fb:active {
   stroke: @button-green;
   opacity: 0.3;
 }
 
-.footer__svg-inst {
+.social-list__svg-inst {
   fill: @icon-grey;
 
   @media (min-width: @tablet-width) {
@@ -318,25 +319,24 @@
   }
 }
 
-.footer__svg-inst:hover {
+.social-list__svg-inst:hover {
   fill: @button-green;
 }
 
-.footer__svg-inst:active {
+.social-list__svg-inst:active {
   fill: @button-green;
   opacity: 0.3;
 }
 
 .form-page-footer {
   @media (min-width: @tablet-width) {
-    width: 768px;
+    width: 100%;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1440px;
-    margin: 0 auto;
-    margin-top: -10px;
+    width: 100%;
+    margin: -10px auto 0 auto;
   }
 }
 

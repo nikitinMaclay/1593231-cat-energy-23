@@ -1,5 +1,5 @@
 let mapButton = document.querySelector('.cooperation__button-img');
-let mapPopup = document.querySelector('.map--modal');
+let mapPopup = document.querySelector('.map-modal');
 let mapClosingButton = document.querySelector('.map-closing-button');
 
 mapButton.addEventListener("click", function (evt) {
