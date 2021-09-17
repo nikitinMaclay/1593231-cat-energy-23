@@ -1,4 +1,4 @@
-.map--modal {
+.map-modal {
   display: none;
 }
 
@@ -9,14 +9,17 @@
   left: 0;
   overflow: hidden;
   border: none;
+  width: 100%;
+  height: 362px;
 
   @media (min-width: @tablet-width) {
     height: 400px;
-    width: 768px;
+    width: 100%;
   }
 
   @media (min-width: @desktop-width) {
     z-index: 101;
-    width: 1440px;
+    position: absolute;
+    width: 100%;
   }
 }

@@ -20,14 +20,14 @@
 }
 
 .cat-features__item {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 21px;
+    margin-bottom: 19px;
   }
 }
 
@@ -35,7 +35,7 @@
   margin-bottom: 0;
 }
 
-.features__label {
+.cat-features__label {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -49,13 +49,15 @@
   }
 }
 
-.features__input {
+.cat-features__input {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: @special-dark-grey;
   border: 1px solid @border-grey2;
+  box-sizing: border-box;
+  height: 53px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -64,36 +66,39 @@
 }
 
 
-.features__input:hover {
+.cat-features__input:hover {
   border: 1px solid @light-grey;
 }
 
-.features__input:focus {
+.cat-features__input:focus {
   outline: 0;
   border: 2px solid @special-dark-grey;
 }
 
-.features__input:valid {
-  border: 1px solid @border-grey2;
+.cat-features__input-age:focus {
+  outline: 0;
+  border: 2px solid @special-dark-grey;
 }
 
-.features__input:invalid:not(:placeholder-shown) {
+.cat-features__input:invalid:not(:placeholder-shown) {
   border: 1px solid @invalid-red;
 }
 
-.features__input-name {
-  width: 211px;
+.cat-features__input-name {
+  width: 228px;
   padding-top: 12px;
   padding-bottom: 11px;
   padding-left: 12px;
   margin-left: 11px;
+  height: 44px;
 
   @media (min-width: @tablet-width) {
     margin-left: 10px;
     padding-top: 11px;
     padding-bottom: 10px;
     padding-left: 18px;
-    width: 545px;
+    width: 570px;
+    height: 52px;
   }
 
   @media (min-width: @desktop-width) {
@@ -101,46 +106,53 @@
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 18px;
-    width: 483px;
+    width: 504px;
+    height: 52px;
   }
 }
 
-.features__input-weight {
-  width: 184px;
+.cat-features__input-weight {
+  width: 203px;
   padding-top: 13px;
   padding-bottom: 11px;
   padding-left: 14px;
   margin-left: 13px;
+  height: 44px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 10px;
     padding-left: 19px;
     padding-top: 9px;
-    width: 513px;
+    width: 540px;
+    height: 52px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 454px;
+    width: 477px;
+    height: 52px;
   }
 }
 
-.features__input-age {
+.cat-features__input-age {
   padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 14px;
   margin-left: 12px;
-  width: 153px;
+  width: 171px;
   margin-top: -1px;
+  height: 44px;
 
   @media (min-width: @tablet-width) {
     padding-top: 9px;
     padding-bottom: 10px;
     padding-left: 18px;
-    width: 474px;
+    width: 498px;
+    height: 52px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 15px;
-    width: 417px;
+    width: 436px;
+    height: 52px;
   }
 }
