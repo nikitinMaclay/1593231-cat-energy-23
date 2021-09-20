@@ -1,19 +1,25 @@
 .extra-goods {
-  width: 282px;
-  margin: 0 auto;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
-    margin: 0 auto;
+    width: 100%;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1440px;
-    margin: 0 auto;
+    width: 100%;
   }
 }
 
 .extra-goods__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -293,18 +299,22 @@
   line-height: 24px;
   margin-bottom: 49px;
   position: relative;
+  width: 100%;
+  margin-left: -28px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 38px;
     margin-top: 68px;
+    width: 100%;
+    margin-left: -149px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 76px;
-    margin-left: 109px;
     margin-bottom: 0;
+    width: 100%;
+    margin-left: -442px;
   }
 }
 
@@ -312,51 +322,57 @@
   content: "";
   position: absolute;
   bottom: 8px;
-  right: -18px;
-  width: 53px;
+  width: 50%;
+  right: -27px;
   height: 2px;
+  z-index: -10;
   background: @button-green;
 
   @media (min-width: @tablet-width) {
     content: "";
     position: absolute;
     bottom: 12px;
-    left: -68px;
-    width: 30px;
+    left: 27px;
+    width: 115.9%;
     height: 3px;
     background: @button-green;
+    z-index: -10;
   }
 
   @media (min-width: @desktop-width) {
     content: "";
     position: absolute;
     bottom: 11px;
-    left: -109px;
-    width: 70px;
+    left: 442px;
+    width: 100%;
     height: 3px;
     background: @button-green;
+    z-index: -10;
   }
 }
 
-.extra-goods__title::after {
+.extra-goods__span {
+  display: block;
+  width: 266px;
+  background: @white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
   @media (min-width: @tablet-width) {
-    content: "";
-    position: absolute;
-    bottom: 12px;
-    right: -29px;
-    width: 327px;
-    height: 3px;
-    background: @button-green;
+    display: block;
+    width: 410px;
+    background: @white;
+    text-align: center;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    content: "";
-    position: absolute;
-    bottom: 11px;
-    right: 0;
-    width: 957px;
-    height: 3px;
-    background: @button-green;
+    background-color: @white;
+    width: 414px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 

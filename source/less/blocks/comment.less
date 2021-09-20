@@ -15,11 +15,11 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 660px;
+    width: 630px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
+    width: 1220px;
   }
 }
 
@@ -28,63 +28,72 @@
   font-size: 24px;
   line-height: 26px;
   position: relative;
-  width: 279px;
-  margin: 26px auto 39px auto;
+  width: 100%;
+  margin: 26px auto 39px -82px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-top: 64px;
-    margin-left: 0;
     margin-bottom: 75px;
-    width: 630px;
+    width: 100%;
+    margin-left: -225px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 47px;
-    width: 1300px;
+    margin-top: 43px;
+    margin-left: -521px;
+    width: 100%;
+  }
+}
+
+.comment__span {
+  display: block;
+  width: 160px;
+  background: @white;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 257px;
+    display: block;
+    margin: 0 auto;
+    background: @white;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 262px;
+    background: @white;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
 .comment__title::before {
+  z-index: -10;
   content: "";
   position: absolute;
-  width: 156px;
   height: 2px;
   top: 13px;
-  right: -20px;
+  left: 81px;
+  width: 100%;
   background: @button-green;
 
   @media (min-width: @tablet-width) {
-    width: 478px;
     top: 22px;
-    right: -68px;
+    left: 224px;
+    width: 100%;
+    z-index: -10;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1108px;
+    width: 100%;
     top: 22px;
-    right: -30px;
+    left: 521px;
     background: @button-green;
-  }
-}
-
-.comment__title::after {
-  @media (min-width: @tablet-width) {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    top: 22px;
-    left: -69px;
-    background: @button-green;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 70px;
-    top: 22px;
-    left: -110px;
-    background: @button-green;
+    z-index: -10;
   }
 }
 
@@ -100,6 +109,7 @@
   resize: none;
   box-sizing: border-box;
   width: 280px;
+  margin-top: 1px;
 
   @media (min-width: @tablet-width) {
     width: 633px;
@@ -111,7 +121,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1197px;
+    width: 1220px;
     height: 174px;
   }
 }
